@@ -6,6 +6,7 @@ import { Cars } from './components/Cars'
 import { WallOfFame } from './components/WallOfFame'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
+
 import './App.css'
 
 import wof1 from './assets/images/wof1.webp'
