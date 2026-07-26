@@ -1,9 +1,11 @@
+import logo from "./src/assets/images/logo.webp"
+
 export const Nav = ({ isOpen, onOpen, onClose }) => {
     return (
         <header>
             <nav>
                 <ul id="site-links" className={`site-links ${isOpen ? 'open' : ''}`}>
-                <img className="logo-site-links on-top" src="./src/assets/images/logo.webp" alt="Wiebe’s Autorijschool"></img>
+                <img className="logo-site-links on-top" src={logo} alt="Wiebe’s Autorijschool"></img>
                 <li className="hide-close">
                     <button type="button" onClick={onClose}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="icon"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>Sluiten</button>
                 </li>
