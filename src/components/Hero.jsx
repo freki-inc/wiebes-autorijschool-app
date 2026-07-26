@@ -1,5 +1,5 @@
-import heroImg from "./src/assets/images/hero-img.webp"
-import logo from "./src/assets/images/logo.webp"
+import heroImg from "../assets/images/hero-img.webp"
+import logo from "../assets/images/logo.webp"
 
 export const Hero = () => {
     return (

@@ -1,4 +1,4 @@
-import logo from "./src/assets/images/logo.webp"
+import logo from "../assets/images/logo.webp"
 
 export const Nav = ({ isOpen, onOpen, onClose }) => {
     return (

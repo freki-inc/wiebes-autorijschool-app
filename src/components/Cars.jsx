@@ -1,5 +1,5 @@
-import opelMokka from "./src/assets/images/Opel-Mokka.webp"
-import tesla from "./src/assets/images/tesla.webp"
+import opelMokka from "../assets/images/Opel-Mokka.webp"
+import tesla from "../assets/images/tesla.webp"
 
 export const Cars = () => {
     return (
