@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { Nav } from './Nav'
-import { Price } from './Price'
+import { PriceComplete } from './PriceComplete'
 import { Footer } from './Footer'
 
 export const PrijslijstPage = () => {
@@ -14,7 +14,7 @@ export const PrijslijstPage = () => {
             onOpen={() => setIsNavOpen(true)}
             onClose={() => setIsNavOpen(false)}
         />
-        <Price />
+        <PriceComplete />
         <Footer />
     </main>
     )

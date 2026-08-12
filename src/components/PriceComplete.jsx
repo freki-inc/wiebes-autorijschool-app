@@ -1,4 +1,4 @@
-export const Price = () => {
+export const PriceComplete = () => {
     return (
         <div className="tarieven-section">
             <h3 className="tarief-titel">
@@ -105,7 +105,94 @@ export const Price = () => {
                     <p className="tarief-desc mb-05">5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 64 per uur! Extra voordelig! *</p>
                     <p className="mb-1">€ 480,-</p>
                 </div>
-                <p className="tarief-fineprint">*Alleen mogelijk na aanschaf basis pakket</p>
+                <div className="tarief-card">
+                    <h4 className="mb-1">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                        Faalangstexamen
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                    </h4>
+                    <p className="tarief-desc mb-05">Meer persoonlijke aandacht van de examinator. Mogelijkheid tot een time-out. Vergrote slagingskans.</p>
+                    <p className="mb-1">€ 320,-</p>
+                </div>
+                <div className="tarief-card">
+                    <h4 className="mb-1">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                        Herkansingspakket
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                    </h4>
+                    <p className="tarief-desc mb-05">6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50.-per uur!! Herexamen praktijk *</p>
+                    <p className="mb-1">€ 475,-</p>
+                </div>
+                <div className="tarief-card">
+                    <h4 className="mb-1">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                        Tussentijdse toets
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 16 16" 
+                            fill="currentColor" 
+                            className="icon">
+                                <path 
+                                    fillRule="evenodd" 
+                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
+                                    clipRule="evenodd" 
+                                />
+                        </svg>
+                    </h4>
+                    <p className="tarief-desc mb-05">50 minuten inrijden. Toetsing rijvaardigheid Evaluatie verbeterpunten. Vergrote slagingskans</p>
+                    <p className="mb-1">€ 235,-</p>
+                </div>
+                <p className="tarief-fineprint mb-2">*Alleen mogelijk na aanschaf basis pakket</p>
             </div>
         </div>
     )

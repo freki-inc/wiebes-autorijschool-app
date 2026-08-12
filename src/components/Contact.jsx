@@ -117,7 +117,7 @@ export const Contact = () => {
                     </textarea>
                     
                     <label className="consent" htmlFor="consent">
-                        <p className="ml-05">
+                        <p className="font-size-sm p-1">
                             <input id="consent" type="checkbox" name="consent" required/>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
