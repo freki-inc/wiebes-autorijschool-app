@@ -22,7 +22,7 @@ export const PriceCard = () => {
                 Tarieven
             </h3>
             <svg className="svg-container">
-                <defs>
+                {/* <defs>
                 <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
                     <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
                     <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
@@ -50,7 +50,7 @@ export const PriceCard = () => {
 
                     <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
                 </filter>
-                </defs>
+                </defs> */}
             </svg>
 
             <div className="card-container">
