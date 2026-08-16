@@ -16,13 +16,11 @@
     font-family: system-ui, -apple-system, sans-serif;
     background-color: var(--dark-color);
     color: oklch(0.985 0 0);
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 
 /* SVG positioning */
