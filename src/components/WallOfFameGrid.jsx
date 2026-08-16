@@ -59,6 +59,7 @@ export const WallOfFameGrid = () => {
                             decoding="async"
                             width={'400px'}
                             height={'auto'}
+                            draggable={false}
                             onClick={() => setSelectedImage(img)}
                         />
                         
@@ -84,6 +85,7 @@ export const WallOfFameGrid = () => {
                         src={selectedImage.src}
                         alt={selectedImage.alt}
                         className="lightbox-image"
+                        draggable={false}
                         onClick={(e) => e.stopPropagation()} // prevent closing when clicking the image
                     />
                     {selectedImage.caption && <figcaption className='fig-caption'>{selectedImage.caption}</figcaption>}

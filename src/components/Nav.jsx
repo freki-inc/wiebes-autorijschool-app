@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { useState } from 'react'
+import { WhatsAppButton } from './WhatsappButton'
 
 import logo from "../assets/images/logo.webp"
 
@@ -7,16 +8,45 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
     return (
         <header>
             <nav>
+                {/* Whatsapp logo */}
+                <WhatsAppButton />
+                {/* Navigation logo */}
+                <Link to="/" draggable={false}>
+                    <img
+                        src={logo} 
+                        alt="Wiebe’s Autorijschool"
+                        draggable={false}
+                        className="logo">
+                    </img>
+                </Link>
+
+                {/* Hamburger menu icon */}
+                <button type="button" className="nav-open-button" onClick={onOpen}>
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        strokeWidth="1.5" 
+                        stroke="currentColor" 
+                        className="nav-open-button-icon">
+                            <path 
+                                strokeLinecap="round" 
+                                strokeLinejoin="round" 
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                            />
+                    </svg>
+                </button>
+
+                {/* Hamburger menu */}
                 <ul id="site-links" className={`site-links ${isOpen ? 'open' : ''}`}>
 
-                    <Link to="/" className="logo-link">
-                        <img 
-                            className="logo-site-links on-top" 
+                    <Link to="/" onClick={onClose}>
+                        <img
                             src={logo} alt="Wiebe’s Autorijschool"
                         />
                     </Link>
 
-                    <li className="hide-close">
+                    <li>
                         <button type="button" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -128,21 +158,8 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                         </NavLink>
                     </li>
                 </ul>
-                <button type="button" className="nav-open-button" onClick={onOpen}>
-                    <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        strokeWidth="1.5" 
-                        stroke="currentColor" 
-                        className="icon">
-                            <path 
-                                strokeLinecap="round" 
-                                strokeLinejoin="round" 
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" 
-                            />
-                    </svg>
-                </button>
+
+
             </nav>
         </header>
     )

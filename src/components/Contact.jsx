@@ -26,7 +26,10 @@ export const Contact = () => {
                 <p className="mt-1">Er zijn allerlei mogelijkheden wanneer het om praktijklessen gaat. Ook kun je kiezen voor een snelcursus, opfriscursus of zelfs de 2toDrive methode, waarbij je al op je 16,5 mag beginnen met rijlessen.</p>
                 <p className="mt-1">Neem voor meer informatie contact met ons op.</p>
             </div>
-            <WhatsAppButton />
+            <div className="display-flex-row mt-2">
+                <WhatsAppButton />
+                <p className='wpp-text ml-05'>Chat on WhatsApp</p>
+            </div>
             <div className="contact-form">
                 <form className="form wd-100" action="https://formsubmit.co/email@email.com" method="POST"> {/* Moet nog worden gemaakt */}
                     
