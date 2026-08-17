@@ -1,6 +1,5 @@
 import { Nav } from './Nav'
 import { Hero } from './Hero'
-import { Price } from './Price'
 import { PriceCard } from './PriceCard'
 import { OverOns } from './OverOns'
 import { GoogleMapEmbed } from './GoogleMapEmbed'

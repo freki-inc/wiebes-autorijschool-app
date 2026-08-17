@@ -6,9 +6,9 @@ export const Hero = () => {
         <div className="hero-section">
             <img src={heroImg} fetchPriority="high" className="hero-img" title="Wiebe’s Rijschool" alt="rijinstructeur Wiebe" draggable={false}></img>
             <div className="hero-call on-top">
-                <p className="hero-slogan-1 on-top mt-1"><span>&#x1F697;</span> Snel je rijbewijs? <span>&#128512;</span></p>
+                <p className="hero-slogan-1 on-top mt-1"><span className="emoticons">&#x1F697;</span> Snel je rijbewijs? <span className="emoticons">&#128512;</span></p>
                 <button className="action-button on-top prevent-select mt-05" draggable={false}><NavLink to="/contact" draggable={false}>Proefles aanvragen</NavLink></button>
-                <span className="hand-bounce hero-slogan-2-emoji mt-05">&#128070;</span>
+                <span className="hand-bounce emoticons hero-slogan-2-emoji mt-05">&#128070;</span>
             </div>
             <a href="#price" className="on-top">
                 <svg 
@@ -17,7 +17,7 @@ export const Hero = () => {
                     viewBox="0 0 24 24" 
                     strokeWidth="2.5" 
                     stroke="currentColor" 
-                    className="icon hero-move-down">
+                    className="hero-move-down mb-1">
                     <path 
                         strokeLinecap="round" 
                         strokeLinejoin="round" 

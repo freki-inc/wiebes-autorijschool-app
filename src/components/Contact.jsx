@@ -28,7 +28,7 @@ export const Contact = () => {
             </div>
             <div className="display-flex-row mt-2">
                 <WhatsAppButton />
-                <p className='wpp-text ml-05'>Chat on WhatsApp</p>
+                <p className='wpp-text ml-05'>Chat met WhatsApp</p>
             </div>
             <div className="contact-form">
                 <form className="form wd-100" action="https://formsubmit.co/email@email.com" method="POST"> {/* Moet nog worden gemaakt */}
@@ -66,10 +66,10 @@ export const Contact = () => {
                                     d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25" 
                                 />
                         </svg>
-                        <strong>Email:</strong>
+                        <strong>E-mailadres:</strong>
                     </label>
 
-                    <input className="input" type="email" id="email" name="email" placeholder="Hier uw Email invullen..." required maxLength="60"/>  
+                    <input className="input" type="email" id="email" name="email" placeholder="Hier uw e-mailadres invullen..." required maxLength="60"/>  
                     
                     <label className="form-label display-flex-row mb-1" htmlFor="tel">
                         <svg 
@@ -104,7 +104,7 @@ export const Contact = () => {
                                     d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" 
                                 />
                         </svg>
-                        <strong>Message:</strong>
+                        <strong>Bericht:</strong>
                     </label>
                     
                     <textarea 
@@ -141,8 +141,8 @@ export const Contact = () => {
                     {/* Prevent spam bots */}
                     <input type="hidden" name="_captcha" value="true"/>
                     {/* Redirect after submit */}
-                    <div className="nu-boeken display-flex-row">
-                        <input type="hidden" name="_next" value="https://www.wiebes-rijschool.nl/hartelijk-dank.html"/>
+                    <div className="verzenden display-flex-row">
+                        <input type="hidden" name="_next" value="https://freki-inc.github.io/wiebes-autorijschool-app/dankjewel.html"/>
                         <input className="action-button mt-1" type="submit" value="Verzenden"/>
                     </div>
                 </form>

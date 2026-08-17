@@ -6,6 +6,7 @@ import { WallOfFamePage } from './components/WallOfFamePage'
 import { OverOnsPage } from './components/OverOnsPage'
 import { ContactPage } from './components/ContactPage'
 import { PrivacyBeleid } from './components/PrivacyBeleid'
+import { DankjewelPage } from './components/DankjewelPage'
 
 import './App.css'
 
@@ -20,6 +21,8 @@ function App() {
         <Route path='/overons' element={<OverOnsPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/privacybeleid' element={<PrivacyBeleid />} />
+        <Route path='/dankjewel' element={<DankjewelPage />} />
+        
       </Routes>
     </BrowserRouter>
 

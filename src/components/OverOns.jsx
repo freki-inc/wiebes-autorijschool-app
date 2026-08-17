@@ -20,12 +20,12 @@ export const OverOns = () => {
                 </svg>
                 Over Ons
             </h3>                
-            <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
+            <img src={tesla} alt='tesla auto' draggable={false}></img>
             <div className='p-2'>
-                <p className='center-text mb-1'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Opel Mokka (schakkel) en een Tesla (automaat).</p>
+                <p className='center-text mb-1'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Tesla (automaat) en een Opel Mokka (schakkel).</p>
                 <p className='center-text'>Kijk <a className='hier' href='https://www.cbr.nl/nl/service/nl/rijscholen/rijschool-maarten' target='_blank'>hier</a> voor mijn meest recente slagingspercentage</p>
             </div>
-            <img src={tesla} alt='tesla auto' draggable={false}></img>
+            <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
             <div className='p-2'>
                 <p className='center-text'>In deze auto's geeft de instructeur namelijk op een betrokken en prettige manier prive les. Iedere leerling kan pakketten op maat samenstellen, zodat ook jij op de beste manier naar je rijbewijs toe kunt werken.</p>
             </div>
