@@ -11,6 +11,7 @@ import wof8 from '../assets/images/wof/wof8.webp'
 import wof9 from '../assets/images/wof/wof9.webp'
 import wof10 from '../assets/images/wof/wof10.webp'
 import wof11 from '../assets/images/wof/wof11.webp'
+import wof12 from '../assets/images/wof/wof12.webp'
 
 export const WallOfFameGrid = () => {
 
@@ -28,6 +29,7 @@ export const WallOfFameGrid = () => {
         { src: wof9, alt: 'geslaagde leerling', caption: 'Ik ben geslaagd door Wiebe!' },
         { src: wof10, alt: 'geslaagde leerling', caption: 'Ik ben geslaagd door Wiebe!' },
         { src: wof11, alt: 'geslaagde leerling', caption: 'Ik ben geslaagd door Wiebe!' },
+        { src: wof12, alt: 'geslaagde leerling', caption: 'Ik ben geslaagd door Wiebe!' },
       ]
     
     return (

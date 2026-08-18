@@ -23,7 +23,7 @@ export const OverOns = () => {
             <img src={tesla} alt='tesla auto' draggable={false}></img>
             <div className='p-2'>
                 <p className='center-text mb-1'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Tesla (automaat) en een Opel Mokka (schakkel).</p>
-                <p className='center-text'>Kijk <a className='hier' href='https://www.cbr.nl/nl/service/nl/rijscholen/rijschool-maarten' target='_blank'>hier</a> voor mijn meest recente slagingspercentage</p>
+                <p className='center-text'>Kijk <a className='hier' href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'>hier</a> voor mijn meest recente slagingspercentage</p>
             </div>
             <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
             <div className='p-2'>
