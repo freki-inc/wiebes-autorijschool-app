@@ -13,7 +13,7 @@ import './App.css'
 function App() {
 
   return (
-    <BrowserRouter basename='/wiebes-autorijschool-app'>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/prijslijst' element={<PrijslijstPage />} />
