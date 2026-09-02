@@ -1,18 +1,18 @@
 export const GoogleMapEmbed = () => {
-  const address = "Marislaan 19, 2316 XV Leiden, The Netherlands"; // your location
+  const address = "place_id:ChIJ_d37HdrHxUcRSpIJxxTRy8E"; // your location
   const encodedAddress = encodeURIComponent(address);
   
   return (
-    <div className="location-map">
+    <div className="location-map-section mt-5">
       <iframe
         title="Location map"
-        width="100%"
-        height="450px"
-        style={{ border: 0 }}
+        width="350px"
+        height="350px"
+        className="location-map"
         loading="lazy"
         allowFullScreen
         referrerPolicy="strict-origin-when-cross-origin"
-        src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodedAddress}`}
+        src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=${encodedAddress}`}
       />
     </div>
     

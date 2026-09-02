@@ -1,4 +1,4 @@
-const WhatsAppButtonLogic = ({ phoneNumber, message = '' }) => {
+export const WhatsAppButton = ({ phoneNumber = "+31 6 19617569", message = "Hoi, ik wil graag een proefles boeken.", disabled = false }) => {
   // Clean the number (remove everything except digits)
   const cleanNumber = phoneNumber.replace(/\D/g, '');
 
@@ -8,12 +8,20 @@ const WhatsAppButtonLogic = ({ phoneNumber, message = '' }) => {
 
     return (
       <a
-        href={url}
+        href={disabled ? undefined : url}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        className='whatsapp-btn'
-        draggable={false}>
+        aria-disabled={disabled}
+        className={`whatsapp-btn ${disabled ? "disabled" : ""}`}
+        draggable={false}
+        onClick={(e) => {
+          if (disabled) {
+            e.preventDefault();
+            alert("Je moet eerst akkoord gaan met de Algemene Voorwaarden!");
+          }
+        }}
+      >
         {/* WhatsApp icon */}
         <svg 
           className='icon wpp' 
@@ -30,14 +38,7 @@ const WhatsAppButtonLogic = ({ phoneNumber, message = '' }) => {
     );
 };
 
-// Usage
-export const WhatsAppButton = () => {
-  return (
-    <WhatsAppButtonLogic
-      phoneNumber="+31 6 19617569"
-      message="Hoi, ik wil graag een proefles boeken."
-    />
-  );
-}
 
+//                     phoneNumber="+31 6 19617569"
+//                    message="Hoi, ik wil graag een proefles boeken."
 {/* Created by willemwebdev.com */}

@@ -6,6 +6,9 @@ import { WallOfFamePage } from './components/WallOfFamePage'
 import { OverOnsPage } from './components/OverOnsPage'
 import { ContactPage } from './components/ContactPage'
 import { PrivacyBeleid } from './components/PrivacyBeleid'
+import { AlgemeneVoorwaarden } from './components/AlgemeneVoorwaarden'
+import { ExamenChecklistPage } from './components/ExamenChecklistPage'
+import { MilieuPage } from './components/MilieuPage'
 import { DankjewelPage } from './components/DankjewelPage'
 
 import './App.css'
@@ -21,6 +24,9 @@ function App() {
         <Route path='/overons' element={<OverOnsPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/privacybeleid' element={<PrivacyBeleid />} />
+        <Route path='/algemenevoorwaarden' element={<AlgemeneVoorwaarden />} />
+        <Route path='/examenchecklist' element={<ExamenChecklistPage />} />
+        <Route path='/milieu' element={<MilieuPage />} />
         <Route path='/dankjewel' element={<DankjewelPage />} />
         
       </Routes>

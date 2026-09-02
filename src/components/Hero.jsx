@@ -3,14 +3,30 @@ import heroImg from "../assets/images/hero-img.webp"
 
 export const Hero = () => {
     return (
-        <div className="hero-section">
+        <div className="hero-section mt-4">
             <img src={heroImg} fetchPriority="high" className="hero-img" title="Wiebe’s Rijschool" alt="rijinstructeur Wiebe" draggable={false}></img>
             <div className="hero-call on-top">
-                <p className="hero-slogan-1 on-top mt-1"><span className="emoticons">&#x1F697;</span> Snel je rijbewijs? <span className="emoticons">&#128512;</span></p>
-                <button className="action-button on-top prevent-select mt-05" draggable={false}><NavLink to="/contact" draggable={false}>Proefles aanvragen</NavLink></button>
+                <p className="hero-slogan-1 on-top mt-1">
+                <span className="emoticons">
+                    &#128526;
+                </span> 
+                    ¡Viva la Rijvolutie!
+                <span className="emoticons">
+                    &#128076;
+                </span>
+                </p>
+                <NavLink 
+                    to="/contact" 
+                    draggable={false}>
+                    <button
+                        className="on-top prevent-select mt-1 cta-button" 
+                        draggable={false}>
+                            Proefles aanvragen    
+                    </button>
+                </NavLink>
                 <span className="hand-bounce emoticons hero-slogan-2-emoji mt-05">&#128070;</span>
             </div>
-            <a href="#price" className="on-top">
+            <a href="#price" className="hero-down-position on-top">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 

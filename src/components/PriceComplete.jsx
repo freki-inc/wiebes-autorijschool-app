@@ -1,6 +1,8 @@
+import { PriceCard } from "./PriceCard"
+
 export const PriceComplete = () => {
     return (
-        <div className="tarieven-section">
+        <div className="tarieven-section mt-5 p-b-1">
             <h3 className="tarief-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -17,214 +19,46 @@ export const PriceComplete = () => {
                 </svg>
                 Tarieven
             </h3>
-            <div className="tarief-wrapper">
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Proefles van 60 min
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">Les van 60 min, persoonlijk plan van aanpak</p>
-                    <p className="mb-1">€ 60,- per les</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Basispakket
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €70 per uur! Inclusief praktijkexamen</p>
-                    <p className="mb-1">€ 825,-</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Uitbreidingspakket
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 70 per uur! Extra voordelig! *</p>
-                    <p className="mb-1">€ 525,-</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Losse Les
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">90 min per les. Prive les. Extra voordelig!</p>
-                    <p className="mb-1">€ 70,-</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Herkansingspakket
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50,- per uur!! Herexamen praktijk voor €175,-</p>
-                    <p className="mb-1">€ 475,-</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Tussentijdse toets
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans</p>
-                    <p className="mb-1">€ 235,-</p>
-                </div>
-                <div className="tarief-card">
-                    <h4 className="mb-1">
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M12.78 7.595a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06l3.25 3.25Zm-8.25-3.25 3.25 3.25a.75.75 0 0 1 0 1.06l-3.25 3.25a.75.75 0 0 1-1.06-1.06l2.72-2.72-2.72-2.72a.75.75 0 0 1 1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                        Praktijkexamen
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 0 16 16" 
-                            fill="currentColor" 
-                            className="icon">
-                                <path 
-                                    fillRule="evenodd" 
-                                    d="M3.22 7.595a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 0 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06l-3.25 3.25Zm8.25-3.25-3.25 3.25a.75.75 0 0 0 0 1.06l3.25 3.25a.75.75 0 1 0 1.06-1.06l-2.72-2.72 2.72-2.72a.75.75 0 0 0-1.06-1.06Z" 
-                                    clipRule="evenodd" 
-                                />
-                        </svg>
-                    </h4>
-                    <p className="tarief-desc mb-05">50 minuten inrijden. Afrijden bij het CBR. Nabespreking.</p>
-                    <p className="mb-1">€ 300,-</p>
-                </div>
-                <p className="tarief-fineprint mb-2">*Alleen mogelijk na aanschaf basis pakket</p>
+            <div>
+                <p className="mb-05">&#128179; Transparante tarieven.</p>
+                <p className="mb-2">&#128664; Een les duurt 90 min.</p>
             </div>
-
-        </div>
+            <div className="price-card-wrapper">
+                <PriceCard />
+                <PriceCard 
+                    badgeText="Basispakket"
+                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €70 per uur! Inclusief praktijkexamen"
+                    price="€ 825,-"
+                />
+                <PriceCard 
+                    badgeText="Uitbreidingspakket"
+                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 70 per uur! Extra voordelig! *"
+                    price="€ 525,-"
+                />
+                <PriceCard 
+                    badgeText="Losse Les"
+                    text="90 min per les. Prive les. Extra voordelig!"
+                    price="€ 70,-"
+                />
+                <PriceCard 
+                    badgeText="Herkansingspakket"
+                    text="6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50,- per uur!! Herexamen praktijk voor €175,-"
+                    price="€ 475,-"
+                />
+                <PriceCard 
+                    badgeText="Tussentijdse toets"
+                    text="50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans"
+                    price="€ 235,-"
+                />
+                <PriceCard 
+                    badgeText="Praktijkexamen"
+                    text="50 minuten inrijden. Afrijden bij het CBR. Nabespreking."
+                    price="€ 300,-"
+                />
+            </div>
+            
+                <p className="tarief-fineprint">*Alleen mogelijk na aanschaf basis pakket</p>
+        </div>    
     )
 }
 

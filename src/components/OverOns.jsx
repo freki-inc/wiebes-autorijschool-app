@@ -3,7 +3,7 @@ import tesla from '../assets/images/tesla.webp'
 
 export const OverOns = () => {
     return (
-        <div className='overons-section'>
+        <div className='overons-section mt-5'>
             <h3 className='over-ons-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -21,13 +21,13 @@ export const OverOns = () => {
                 Over Ons
             </h3>                
             <img src={tesla} alt='tesla auto' draggable={false}></img>
-            <div className='p-2'>
-                <p className='center-text mb-1'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Tesla (automaat) en een Opel Mokka (schakkel).</p>
-                <p className='center-text'>Kijk <a className='hier' href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'>hier</a> voor mijn meest recente slagingspercentage</p>
+            <div className='overons-text p-2'>
+                <p className='mb-1'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Tesla (automaat) en een Opel Mokka (schakkel).</p>
+                <p className='center-text'>Kijk <a className='slagings-cbr' href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'>hier</a> voor mijn meest recente slagingspercentage</p>
             </div>
             <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
-            <div className='p-2'>
-                <p className='center-text'>In deze auto's geeft de instructeur namelijk op een betrokken en prettige manier prive les. Iedere leerling kan pakketten op maat samenstellen, zodat ook jij op de beste manier naar je rijbewijs toe kunt werken.</p>
+            <div className='p-tlr-2'>
+                <p className='overons-text p-b-1'>In deze auto's geeft de instructeur namelijk op een betrokken en prettige manier prive les. Iedere leerling kan pakketten op maat samenstellen, zodat ook jij op de beste manier naar je rijbewijs toe kunt werken.</p>
             </div>
         </div>
     )

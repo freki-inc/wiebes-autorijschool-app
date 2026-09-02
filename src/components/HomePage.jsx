@@ -1,6 +1,6 @@
 import { Nav } from './Nav'
 import { Hero } from './Hero'
-import { PriceCard } from './PriceCard'
+import { PriceCardHome } from './PriceCardHome'
 import { OverOns } from './OverOns'
 import { GoogleMapEmbed } from './GoogleMapEmbed'
 import { Contact } from './Contact'
@@ -14,7 +14,7 @@ export const HomePage = () => {
     <main>
         <Nav />
         <Hero />
-        <PriceCard />
+        <PriceCardHome />
         <OverOns />
         <GoogleMapEmbed />
         <Contact />

@@ -15,7 +15,7 @@ export const PrivacyBeleid = () => {
             onClose={() => setIsNavOpen(false)}
             />
             <div className='privacybeleid'>
-                <h1 className='center-text mb-1'>Algemene Voorwaarden Website</h1>
+                <h1 className='center-text mb-1'>Privacy Beleid Website</h1>
                 <p className='mb-05'>Laatst bijgewerkt: 11 augustus 2026</p>
                 <p className='mb-1'>Lees deze algemene voorwaarden zorgvuldig door voordat u Onze Dienst gebruikt.</p>
                 <h2 className='mb-1'>Interpretatie en Definities</h2>

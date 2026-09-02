@@ -48,56 +48,87 @@
   /* === CSS Custom Properties === */
 
   :root {
-    /* Color Palette */
-    --primary-color: #166534;
-    --primary-color2: #2E7D32;
-    --primary-color3: #228B22;
-    --primary-color4: #228B22;
-    --secondary-color: #d8ff4d;
-    --secondary-color2: #4CAF50;
-    --secondary-color3: #16A34A;
-    --secondary-color4: #16A34A;
-    --supporting-color: ;
-    --supporting-color2: ;
-    --supporting-color3: ;
-    --supporting-color4: ;
-    --text-color: ;
-    --text-color2: ;
-    --text-color3: ;
-    --text-color4: ;
-    --accent-color: #1E90FF;
-    --accent-color2: #FBBF24;
-    --accent-color3: #F59E0B;
-    --accent-color4: #F59E0B;
-    --highlight-color: #191970;
+    /* Color Palettes */
+
+    /* Modern Clean-Tech */
+    --primary-color: #22C55E; /* Deep Emerald #065F46 */ 
+    --secondary-color: #22D3EE; /* Soft Cyan / Icy Teal */
+    --supporting-color: #09632A; /* Deep Forest Green */
+    --background-color: #ECFDF5; /* Very Light Mint */
+    --text-color: #1E293B; /* Soft Charcoal */
+    --accent-color: #FBBF24; /* Soft Yellow */
+    
+    /* Additional Colors */
+    --highlight-color: #ffd97a;
     --light-color: #f9f9f9;
     --dark-color: #333;
+    --dark-color2: #1E293B;
     --translucent-color: rgba(255, 255, 255, 0.8);
     --dark-translucent-color: rgba(119, 119, 119, 0.8);
     --white: #ffffff;
 
     /* Layout Colors */
-    --nav-footer-background-color: var(--secondary-color);
-    --background-color: var(--dark-color);
-    --highlight-background-color: var(--light-color);
-    --button-background: var(--accent-color);
-    --shadow-color: var(--dark-color);
-    --light-shadow-color: var(--white);
-    --btn-shadow-color: var(--accent-color);
-    --card-border: var(--secondary-color);
-    --nav-background: var(--secondary-color);
-    --nav-btn-background-translucent: var(--translucent-color);
 
+    /* Primary */
+    --nav-footer-background-color: var(--primary-color);
+    --green-border: var(--primary-color);
+
+    /* Secondary */
+    --secondary-btn: var(--secondary-color);
+    --hover-state: var(--supporting-color);
+    --card-highlights: var(--secondary-color);
+
+    /* Supporting */
+    --border: var(--supporting-color);
+    --section-headers: var(--supporting-color);
+    --icon: var(--supporting-color);
     
-    /* Typography*/
-    --h1-font: 'Black Ops One';
-    --hero-quote-font: 'Saira';
-    --font-family: 'Saira';
-    --hero-btn-font: 'Caveat'; 
-    --navigation-accent: var(--primary-color);
-    --text-color: var(--light-color);
-    --hero-text-color: var(--white);
+    /* Backgrounds */
+    --page-background: var(--background-color);
+    --card-background: var(--background-color);
+
+    /* Text */
+    --body-text: var(--text-color);
+    --headings: var(--text-color);
+    --btn-text-color: var(--text-color);
+    --form-labels: var(--text-color);
+    --footer-text: var(--light-color);
+    --hero-light-text: var(--light-color);
+    --pricecard-text: var(--light-color);
+
+    /* Accent */
+    --cta: var(--accent-color);
+    --highlight: var(--accent-color);
+    --hero-accent: var(--accent-color);
+    --pricing-accent: var(--accent-color);
+    --btn-shadow-color: var(--accent-color);
+
+    /* Details */
+    --shadow-color: var(--dark-color);
     --wppGreen: #25d366;
+    --nav-open-button-icon-color: var(--dark-color);
+    --dark-border: var(--dark-color);
+    --algemene-voorwaarden-link: var(--light-color);
+    --consent-color: var(--text-color);
+    --consent-hover-color: var(--supporting-color);
+    --site-links-hover-color: var(--supporting-color);
+    --slagings-cbr-link: var(--supporting-color);
+    --contact-link-color: var(--text-color);
+    --contact-link-hover: var(--supporting-color);
+
+    /* PriceCard */
+    --electric-border-color: var(--supporting-color);
+    --electric-light-color: oklch(from var(--electric-border-color) l c h);
+    --gradient-color: oklch(
+      from var(--electric-border-color) 0.3 calc(c / 2) h / 0.4
+    );
+    --color-neutral-900: oklch(0.185 0 0);
+
+    /* Typography*/
+    --body-font-family: 'Saira';
+    --heading-font: 'Saira';
+    --btn-font: 'Caveat'; 
+
   }
 }
 @layer resetstyles {
@@ -118,36 +149,69 @@
   /* === Global Styles === */
 
   html, body {
-    width: 100%;
-    min-height: 100%;
+    width: 100vw;
+
     position: relative;
-    background-color: var(--background-color);
-    font-family: var(--font-family), 'Courier New', Courier, monospace;
+    background-color: var(--page-background);
+    font-family: var(--body-font-family), 'Courier New', Courier, monospace;
     font-size: 16px;
-    color: var(--text-color);
+    color: var(--body-text);
     line-height: 1.6;
     scroll-behavior: smooth;
     margin: 0;
-    -webkit-user-drag: none;
     user-select: none;
   }
 
   /* Links */
   a {
     transition: text-decoration 4s ease;
+    cursor: pointer;
   }
 
   a:hover {
     text-decoration: underline;
-    cursor: pointer;
   }
 
-  .hier {
-    color: var(--accent-color);
+  /* a:visited {
+    color: var(--link);
+  } */
+
+  .slagings-cbr {
+    color: var(--slagings-cbr-link);
+    text-decoration: underline;
   }
 
-  .hier:hover {
+  footer a {
+    font-weight: 600;
+  }
+
+  footer a:hover {
     color: var(--highlight-color);
+    text-decoration: underline;
+  }
+
+  .algemene-voorwaarden {
+    padding: 2rem;
+    margin-top: 4rem;
+  }
+
+  .algemene-voorwaarden-link  {
+    color: var(--algemene-voorwaarden-link);
+    text-decoration: underline;
+  }
+
+  .algemene-voorwaarden-link:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+  }
+
+  .algemene-voorwaarden-contact-link {
+    color: var(--contact-link-color);
+    text-decoration: underline;
+  }
+
+  .algemene-voorwaarden-contact-link:hover {
+    color: var(--contact-link-hover);
     text-decoration: underline;
   }
 
@@ -161,28 +225,24 @@
   /* === Page Styles === */
 
   main {
-    width: 100%;
-    min-height: 100vh;
-    /* display: flex;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center; */
   }
 
   /* === Section Containers === */
   
-  /* Hero Section */
+  /** Hero Section **/
   .hero-section {
     width: 100%;
-    height: calc(100vh - 4rem);
-    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
     padding: 1rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: var(--dark-color);
   }
 
   .hero-img {
@@ -193,16 +253,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* filter: blur(2px); */
   }
 
   .hero-slogan-1 {
     width: 100%;
     text-align: center;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.2;
-    color: var(--hero-text-color);
+    color: var(--hero-light-text);
     text-shadow: 1px 1px 5px var(--shadow-color);
   }
 
@@ -218,13 +277,6 @@
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.2;
-  }
-
-  .whatsapp-btn-location {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0 3rem 3rem 0;
   }
 
   .hand-bounce {
@@ -245,11 +297,16 @@
     100% { transform: translateY(0); }
   }
 
+  .hero-down-position {
+    position: absolute;
+    bottom: 0;
+  }
+
   .hero-move-down {
     animation: 0.9s linear 5s infinite bounceDown;
     width: 3rem;
     height: 3rem;
-    color: var(--secondary-color);
+    color: var(--light-color);
   }
 
   .hero-move-down:hover {
@@ -275,12 +332,16 @@
     100% { transform: translateY(0); }
   }
 
-  /* Prijslijst Section */
+  /** Prijslijst Section **/
 
   .tarieven-section {
     width: 100%;
-    height: 100%;
-    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--page-background);
+    padding: 0 2rem 0;
   }
 
   .tarief-titel {
@@ -288,51 +349,153 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
-    margin: 5rem 0 1rem 0;
+    margin: 0 0 1rem 0;
   }
 
-  .tarief-wrapper {
-    width: 100%;
+  .price-card-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .tarief-card {
-    width: 18rem;
-    height: 10rem;
+  /* Card container */
+  .card-container {
+    width: 320px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 0 0.5rem;
-    margin-bottom: 2rem;
-    border: 1px solid var(--card-border);
-    border-radius: 1.5rem;
-    backdrop-filter: blur(10px);
-    box-shadow: 10px 5px 5px var(--shadow-color);
+    justify-content: center;
+    padding: 0 1.5rem;
+    border: 2px solid var(--electric-light-color);
+    border-radius: 24px;
+    position: relative;
+    color: var(--pricecard-text);
+    background: linear-gradient(
+        -30deg,
+        var(--gradient-color),
+        transparent,
+        var(--gradient-color)
+        ),
+        linear-gradient(
+        to bottom,
+        var(--color-neutral-900),
+        var(--color-neutral-900)
+        );
+  }
+  /* Card main container */
+
+  .main-card {
+    border-radius: 24px;
+    margin-top: -4px;
+    margin-left: -4px;
+  }
+
+  .main-card-price-card {
+    width: 350px;
+    border-radius: 24px;
+    margin-top: -4px;
+    margin-left: -4px;
+  }
+
+  /* Card content sections */
+  .content-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2.5rem 0;
+  }
+
+  .content-bottom {
+    padding: 0 0 2rem;
+  }
+
+  /* Scrollbar glass component */
+  .scrollbar-glass {
+    background: radial-gradient(
+        47.2% 50% at 50.39% 88.37%,
+        rgba(22, 163, 74, 0.12) 0%,
+        rgba(22, 163, 74, 0) 100%
+        ),
+        rgba(22, 163, 74, 0.04);
+    position: relative;
+    transition: background 0.3s ease;
+    border-radius: 14px;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 16px;
+    text-transform: uppercase;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
   }
 
-  .tarief-desc {
-    font-size: 0.75rem;
+  .scrollbar-glass:hover {
+    background: radial-gradient(
+        47.2% 50% at 50.39% 88.37%,
+        rgba(251, 191, 36, 0.12) 0%,
+        rgba(251, 191, 36, 0) 100%
+        ),
+        rgba(251, 191, 36, 0.08);
+  }
+
+  .scrollbar-glass::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1px;
+    background: linear-gradient(
+        150deg,
+        rgba(22, 163, 74, 0.48) 16.73%,
+        rgba(22, 163, 74, 0.08) 30.2%,
+        rgba(22, 163, 74, 0.08) 68.2%,
+        rgba(22, 163, 74, 0.6) 81.89%
+        );
+    border-radius: inherit;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+  }
+
+  /* PriceCard Typography */
+  .price-crossed-out {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .price {
+    color: #fbbf24;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 500;
+    padding: 0 0 1rem;
+  }
+
+  .description {
+    opacity: 0.75;
+    text-align: center;
   }
 
  .tarief-fineprint {
     font-size: 0.75rem;
   }
 
-  /* Over Ons Section */
+  /** Over Ons Section **/
 
   .overons-section {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
   }
 
   .over-ons-titel {
@@ -342,21 +505,39 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
   }
+  
+  .overons-text {
+    text-align: justify;
+  }
 
-  /* Location Map */
-  .location-map {
+  /** Location Map **/
+  .location-map-section {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  /* Contact Section */
+  .location-map {
+    width: 320px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px var(--primary-color);
+    border-radius: 1rem;
+  }
+
+  /** Contact Section **/
 
   .contact-section {
     width: 100%;
+    height: 100%;
     padding: 0 2rem;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .contact-titel {
@@ -367,78 +548,18 @@
     margin-bottom: 1rem;
   }
 
-  .contact-text p {
+  .contact-text {
     text-align: justify;
-  }
-
-  .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 2rem 0 0;
-  }
-
-  .radio-wrapper {
-    padding-left: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .text-area {
-    width: 100%;
-    margin-bottom: 1rem;
-    padding: 0.6rem 1rem;
-    border: none;
-    border-radius: 1rem;
-    background-color: var(--white);
-    box-shadow: none;
-    color: var(--dark-color);
-    font-family: var(--font-family);
-    font-size: 0.9rem;
-  }
-
-  .text-area:focus {
-    padding-top: calc(0.6rem - 2px);
-    padding-bottom: calc(0.6rem - 2px);
-    padding-left: calc(1rem - 2px);
-    padding-right: calc(1rem - 2px);
-    border: 2px solid var(--secondary-color);
-    outline: none;
-  }
-
-  .consent {
-    width: 105%;
-  }
-
-  .consent a {
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-
-  .consent a:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
-    text-shadow: 1px 1px 3px var(--secondary-color);
-  }
-
-  .verzenden {
-    width: 100%;
-  }  
-
-  .dankjewel {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem 1rem;
   }
 
-  /* Wall of Fame Section */
+  /** Wall of Fame Section **/
 
   .wall-of-fame-section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
@@ -455,7 +576,6 @@
 
   .image-grid {
     width: 100%;
-    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0;
@@ -520,6 +640,12 @@
     z-index: 1001;
   }
 
+  .close-btn-icon {
+    width: 2rem;
+    height: 2rem;
+    color: var(--white);
+  }
+
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -529,23 +655,124 @@
     from { transform: scale(0.95); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
   }
+
+  /* Examen Checklist Section */
+
+  .examenchecklist-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2rem 0;
+  }
+
+  .examenchecklist-titel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .text-area {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--white);
+    box-shadow: none;
+    color: var(--dark-color);
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+  }
+
+  .text-area:focus {
+    padding-top: calc(0.6rem - 2px);
+    padding-bottom: calc(0.6rem - 2px);
+    padding-left: calc(1rem - 2px);
+    padding-right: calc(1rem - 2px);
+    border: 2px solid var(--green-border);
+    outline: none;
+  }
+
+  .consent {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .consent a {
+    text-decoration: underline;
+    color: var(--consent-color);
+  }
+
+  .consent a:hover {
+    color: var(--consent-hover-color);
+    text-decoration: underline;
+    /* text-shadow: 1px 1px 3px var(--secondary-color); */
+  }
+
+  .verzenden {
+    width: 100%;
+  }
+
+  /* Milieu Section */
+
+  .milieu-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 2rem 0;
+  }
+
+  .milieu-titel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  /* Dankjewel Section */
+
+  .dankjewel {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+  }
 }
 @layer typographystyles {
   /* === Typography Styles === */
 
   h1 {
+    color: var(--section-headers);
     font-size: 2rem;
   }
 
   h2 {
+    color: var(--section-headers);
     font-size: 1.5rem;
   }
 
   h3 {
-    font-size: 1.2rem;
+    color: var(--section-headers);
+    font-size: 1.5rem;
   }
 
   h4 {
+    color: var(--section-headers);
     display: flex;
     align-items: center;
     margin-top: 1rem;
@@ -588,9 +815,18 @@
   .ml-05 { margin-left: 0.5rem; }
   .ml-02 { margin-left: 0.2rem; }
   .mr-1 { margin-right: 1rem; }
+  .mr-05 { margin-right: 0.5rem; }
+  .mb-m5 { margin-bottom: -7rem;}
+  .mt-m12 { margin-top: -15rem;}
   .p-1  { padding: 1rem; }
   .p-2  { padding: 2rem; }
+  .p-b-1 { padding-bottom: 1rem; }
+  .p-tlr-2 { padding: 2rem 2rem 0; }
+  .p-tlr-1 { padding: 1rem 1rem 0; }
+  .p-blr-1 { padding: 0 1rem 1rem; }
+  .p-lr-2 { padding:0 2rem; }
   .wd-100 { width: 100%; }
+  .ht-100 { height: 100% }
   .center-text { text-align: center; }
   .border{ border: 1px solid black}
   .size-check { 
@@ -602,7 +838,7 @@
 @layer modulestyles {
   /* === Module Styles === */
 
-  /* Site Navigation */
+  /** Site Navigation **/
   header {
     width: 100%;
     height: 4rem;
@@ -625,7 +861,7 @@
   }
 
   .logo {
-    border: 2px solid var(--dark-color);
+    border-radius: 0.7rem;
   }
 
   .site-links {
@@ -639,7 +875,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--page-background);
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: ease-out 0.4s; /* 0.3 second transition effect to slide in the sidebar */ 
     line-height: 1;
@@ -655,7 +891,7 @@
     align-items: center;
     font-size: 1.3rem;
     font-weight: 600;
-    color: var(--text-color);
+    color: var(--body-text);
     margin: 1rem 0 0 0;
     border: none;
     background-color: transparent;
@@ -664,7 +900,7 @@
   .site-links a:hover, .site-links button:hover {
     font-size: 1.5rem;
     transition: ease-in 0.15s;
-    color: var(--secondary-color);
+    color: var(--site-links-hover-color);
   }
 
   .site-links li svg {
@@ -676,18 +912,19 @@
   }
 
   .nav-open-button {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2rem;
+    height: 2rem;
     background-color: transparent;
-    border: none;
-    /* border-radius: 0.5rem;
-    border: 0.15rem solid var(--dark-color); */
+    border: 2px solid var(--dark-border);
+    border-radius: 0.6rem;
+  }
+
+  .nav-open-button:hover {
+    transform: scale(1.1);
   }
 
   .nav-open-button-icon {
-    width: 2rem;
-    height: 2rem;
-    color: var(--dark-color);
+    color: var(--nav-open-button-icon-color);
   }
 
   .nav-open-button-icon:hover {
@@ -695,59 +932,84 @@
     cursor: pointer;
   }
 
-  /* Site Footer */
+  /** Site Footer **/
   footer {
     width: 100vw;
-    height: 4rem;
+    height: 8rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     background-color: var(--nav-footer-background-color);
     backdrop-filter: blur(10px);
-    padding: 0.8rem;
-    color: var(--dark-color);
+    padding: 1rem 0.8rem;
     font-size: 0.7rem;
+    margin-top: 2rem;
   }
 
-  footer a {
-    font-weight: 600;
-    color: var(--accent-color);
-    margin-right: 1rem;
+  .footer-top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: baseline;
   }
 
-  footer a:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
-  }
-
-  .privacybeleid {
-    padding: 2rem;
-    margin-top: 4rem;
-  }
-
-  .privacybeleid-link  {
-    font-weight: 600;
-    color: var(--accent-color);
-  }
-
-  .privacybeleid-link:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }
 @layer componentstyles {
   /* === Component Styles === */
 
-  .action-button {
+  button {
+    /* border: none; */
+    color: var(--btn-text-color); 
+    background-color: transparent;
+  }
+
+  .cta-button {
     width: 15rem;
     display: inline-block;
     padding: 0.7rem;
-    font-family: var(--hero-btn-font);
-    font-size: 1.5rem;
+    font-family: var(--btn-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: var(--btn-text-color); 
+    opacity: 0.75;
+    background-color: var(--cta);
+    background-image: radial-gradient(93% 87% at 87% 89%, rgb(251, 191, 36) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    border: none;
+    border-radius: 2rem;
+  }
+
+  .cta-button a {
+    text-decoration: none;
+  }
+
+  .cta-button:hover {
+    transition: opacity 0.5s ease-in;
+    opacity: 0.95;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgb(251, 191, 36) 0%, rgba(22, 101, 52, 0.2)), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    cursor: pointer;
+  }
+
+  .cta-button:active {
+    transform: scale(0.95);
+    border: none;
+  }
+
+  .secondary-button {
+    width: 15rem;
+    display: inline-block;
+    padding: 0.7rem;
+    font-family: var(--btn-font);
+    font-size: 1.6rem;
     text-align: center;
     text-decoration: none;
     text-shadow: 1px 1px 5px var(--btn-shadow-color);
-    color: var(--dark-color);
+    color: var(--btn-text-color); 
     opacity: 0.75;
     background-color: var(--secondary-color);
     background-image: radial-gradient(93% 87% at 87% 89%, rgb(216, 255, 77) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
@@ -755,48 +1017,21 @@
     border-radius: 2rem;
   }
 
-  .action-button a {
+  .secondary-button a {
     text-decoration: none;
   }
 
-  .action-button:hover {
+  .secondary-button:hover {
     transition: opacity 0.5s ease-in;
     opacity: 0.95;
     background-image: radial-gradient(93% 87% at 87% 89%, rgb(216, 255, 77) 0%, rgba(255, 42, 0, 0.2)), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
     cursor: pointer;
   }
 
-  .action-button:active {
+  .secondary-button:active {
     transform: scale(0.95);
     border: none;
   }
-
-  /* .button {
-    width: 11.5rem;
-    display: inline-block;
-    padding: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    color: var(--text-color);
-    opacity: 0.75;
-    background-color: var(--button-background);
-    background-image: radial-gradient(93% 87% at 87% 89%, rgb(255, 42, 0) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
-    border: 1px solid var(--accent-color);
-    border-radius: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .button:hover {
-    transition: opacity 1s ease;
-    opacity: 1;
-    cursor: pointer;
-  }
-
-  .button:active {
-    transform: scale(0.95);
-  } */
 
   .input {
     width: 100%;
@@ -807,7 +1042,7 @@
     border-radius: 2rem;
     background-color: var(--white);
     box-shadow: none;
-    color: var(--dark-color);
+    color: var(--body-text);
     font-family: var(--font-family);
     font-size: 0.9rem;
   }
@@ -817,7 +1052,7 @@
     padding-bottom: calc(0.6rem - 2px);
     padding-left: calc(1rem - 2px);
     padding-right: calc(1rem - 2px);
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--green-border);
     outline: none;
   }
 
@@ -826,19 +1061,23 @@
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid var(--dark-color);
+    border: 2px solid var(--dark-border);
     border-radius: 0.6rem;
   }
 
-  .wpp-text {
-    color: var(--light-color);
+  .whatsapp-btn:hover {
+    transform: scale(1.1);
   }
 
-  /* Icons */
+  .wpp-text {
+    color: var(--body-text);
+  }
+
+  /** Icons **/
   .icon {
     width: 2rem;
     height: 2rem;
-    color: var(--secondary-color);
+    color: var(--icon);
   }
 
   .emoticons {
@@ -869,7 +1108,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 0.2rem;
-    color: #FFFFFF;
+    color: var(--white);
   }
 
   label .icon {
@@ -880,26 +1119,52 @@
 
 }
 @layer mediaqueries {
-  /* Adjusts positioning of hamburger icon for tablet screens */
+  /** Adjusts positioning of hamburger icon for tablet screens **/
   @media(min-width: 768px) {
     nav {
       justify-content: center;
     }
   }
-  /* Properties for collapsable sidebar for mobile device screens */
+  /** Properties for collapsable sidebar for mobile device screens **/
   @media(max-width: 1279px) {
 
   }
-  /* Adjusts layout for large screen sizes */
+  /** Adjusts layout for large screen sizes **/
   @media(min-width: 1280px) {
    
   }
   @media(min-width: 1440px) {
   }
-  /* Adjustments for very large monitor screens */
+  /** Adjustments for very large monitor screens **/
   @media(min-width: 1660px) {
 
   }
 }
+
+/*
+Classic Eco
+--primary-color1: #166534; Deep Forest Green
+--secondary-color1: #16A34A; Fresh Mid Green
+--supporting-color1: #0D9488; Soft Teal
+--background-color1: #F0FDF4; Warm Off-White / Soft Mint
+--text-color1: #1E293B; Soft Charcoal
+--accent-color1: #fbbf24; Soft Solar Yellow
+
+Earthy & Grounded
+--primary-color3: #84A98C; Sage Green
+--secondary-color3: #52796F; Deep Moss / Olive
+--supporting-color3: #D4C4A8; Soft Sand / Light Beige
+--background-color3: #FAF7F2; Warm Cream
+--text-color3: #2F3E46; Deep Earth Charcoal
+--accent-color3: #E07A5F; Soft Terracotta
+
+Optimistic Solar-Green Hybrid
+--primary-color4: #22C55E; Leaf / Mid Green
+--secondary-color4: #38BDF8; Soft Sky Blue
+--supporting-color4: #15803D; Deeper Green
+--background-color4: #F8FAFC; Clean White / Cool Off-White
+--text-color4: #1E293B; Soft Charcoal
+--accent-color4: #FBBF24; Sunny Yellow / Gold
+*/
 
 /* Created by willemwebdev.com */
