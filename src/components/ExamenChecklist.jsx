@@ -18,7 +18,7 @@ export const ExamenChecklist = () => {
                 </svg>
                 Examen Checklist
             </h3>
-            <img src="../src/assets/images/rijles.webp" alt="rijles" />
+            <img src="../assets/images/rijles.webp" alt="rijles" />
             <h4 className="mb-05">&#128161; Belangrijk! &#128064;</h4>
             <p className="mb-05">Voordat jouw examen aangevraagd kan worden bij het cbr, moet jij de volgende zaken regelen:</p>
             <p className="mb-05">&#128073; Haal je theorie</p>
