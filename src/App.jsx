@@ -10,6 +10,7 @@ import { AlgemeneVoorwaarden } from './components/AlgemeneVoorwaarden'
 import { ExamenChecklistPage } from './components/ExamenChecklistPage'
 import { MilieuPage } from './components/MilieuPage'
 import { DankjewelPage } from './components/DankjewelPage'
+import ScrollToTop from './components/ScrollToTop'
 
 import './App.css'
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/prijslijst' element={<PrijslijstPage />} />
@@ -28,7 +30,6 @@ function App() {
         <Route path='/examenchecklist' element={<ExamenChecklistPage />} />
         <Route path='/milieu' element={<MilieuPage />} />
         <Route path='/dankjewel' element={<DankjewelPage />} />
-        
       </Routes>
     </BrowserRouter>
 
