@@ -8,23 +8,16 @@ export const WhatsAppButton = ({ phoneNumber = "+31 6 19617569", message = "Hoi,
 
     return (
       <a
-        href={disabled ? undefined : url}
+        href={url}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
-        aria-disabled={disabled}
-        className={`whatsapp-btn ${disabled ? "disabled" : ""}`}
+        className="whatsapp-btn"
         draggable={false}
-        onClick={(e) => {
-          if (disabled) {
-            e.preventDefault();
-            alert("Je moet eerst akkoord gaan met de Algemene Voorwaarden!");
-          }
-        }}
       >
         {/* WhatsApp icon */}
         <svg 
-          className='icon wpp' 
+          className='wpp' 
           width="24" 
           height="24" 
           viewBox="0 0 24 24" 
@@ -38,7 +31,4 @@ export const WhatsAppButton = ({ phoneNumber = "+31 6 19617569", message = "Hoi,
     );
 };
 
-
-//                     phoneNumber="+31 6 19617569"
-//                    message="Hoi, ik wil graag een proefles boeken."
 {/* Created by willemwebdev.com */}

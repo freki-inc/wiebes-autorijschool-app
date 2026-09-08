@@ -1,12 +1,7 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
-
 import { WhatsAppButton } from './WhatsappButton';
 import contactImg from '../assets/images/contact.webp';
 
 export const Contact = () => {
-
-    const [consentGiven, setConsentGiven] = useState(false);
 
     return (
         <div id='contact' className="contact-section mt-5">
@@ -28,43 +23,13 @@ export const Contact = () => {
             </h3>
             <img src={contactImg} alt="rijinstructeur"></img>
             <div className="contact-text">
-                <p className="mt-1">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 1 uur.</p>
+                <p className="mt-1">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 60 min.</p>
                 <p className="mt-1">Geef daarbij ook aan of je in een automaat of handgeschakelde auto wilt rijden.</p>
             </div>
-
             <div className="display-flex-row mt-2">
-                <WhatsAppButton disabled={!consentGiven} />
+                <WhatsAppButton />
                 <p className='wpp-text ml-05'>Chat met WhatsApp</p>
             </div>
-
-            <form className="display-flex-column mt-1">
-                <label className="consent" htmlFor="consent">
-                    <p className="font-size-sm p-1">
-                        <input 
-                            id="consent" 
-                            type="checkbox" 
-                            name="consent" 
-                            required
-                            checked={consentGiven}
-                            onChange={(e) => setConsentGiven(e.target.checked)}    
-                        />
-                        <svg 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            fill="none" 
-                            viewBox="0 0 24 24" 
-                            strokeWidth="1.5" 
-                            stroke="currentColor" 
-                            className="size-check">
-                                <path 
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round" 
-                                    d="m4.5 12.75 6 6 9-13.5" 
-                                />
-                        </svg>
-                        Ik ga akkoord met de <NavLink to="/algemenevoorwaarden">Algemene Voorwaarden Rijvolutie</NavLink> en geef toestemming om mijn gegevens op te slaan voor reactiedoeleinden.
-                    </p>
-                </label>
-            </form>
         </div>
     )
 }

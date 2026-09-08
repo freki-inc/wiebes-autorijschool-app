@@ -51,12 +51,12 @@
     /* Color Palettes */
 
     /* Modern Clean-Tech */
-    --primary-color: #22C55E; /* Deep Emerald #065F46 */ 
-    --secondary-color: #22D3EE; /* Soft Cyan / Icy Teal */
-    --supporting-color: #09632A; /* Deep Forest Green */
+    --primary-color: #22c55e; /* Emerald rgb(34, 197, 94) */ 
+    --secondary-color: #22d3ee; /* Soft Cyan / Icy Teal rgb(34, 211, 238) */
+    --supporting-color: #09632a; /* Deep Forest Green rgb(9, 99, 42) */
     --background-color: #ECFDF5; /* Very Light Mint */
     --text-color: #1E293B; /* Soft Charcoal */
-    --accent-color: #FBBF24; /* Soft Yellow */
+    --accent-color: #fbbf24; /* Soft Yellow rgb(251, 191, 36) */
     
     /* Additional Colors */
     --highlight-color: #ffd97a;
@@ -112,9 +112,13 @@
     --consent-color: var(--text-color);
     --consent-hover-color: var(--supporting-color);
     --site-links-hover-color: var(--supporting-color);
-    --slagings-cbr-link: var(--supporting-color);
+    --slagings-cbr-link: var(--text-color);
+    --slagings-cbr-hover: var(--light-color);
     --contact-link-color: var(--text-color);
     --contact-link-hover: var(--supporting-color);
+    --translucent-accent-color: rgba(251, 191, 36, 0.8);
+    --translucent-primary-color: rgba(34, 197, 94, 0.8);
+    --translucent-secondary-color: rgba(34, 211, 238, 0.8);
 
     /* PriceCard */
     --electric-border-color: var(--supporting-color);
@@ -175,11 +179,6 @@
   /* a:visited {
     color: var(--link);
   } */
-
-  .slagings-cbr {
-    color: var(--slagings-cbr-link);
-    text-decoration: underline;
-  }
 
   footer a {
     font-weight: 600;
@@ -372,6 +371,7 @@
     border-radius: 24px;
     position: relative;
     color: var(--pricecard-text);
+    box-shadow: 8px 8px 9px var(--shadow-color);
     background: linear-gradient(
         -30deg,
         var(--gradient-color),
@@ -476,7 +476,7 @@
     font-size: 3rem;
     line-height: 3rem;
     font-weight: 500;
-    padding: 0 0 1rem;
+    padding: 0 0 2rem;
   }
 
   .description {
@@ -510,6 +510,24 @@
     text-align: justify;
   }
 
+  .slagings-percentage {
+    background-color: var(--primary-color);
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+  }
+
+  .slagings-cbr {
+    color: var(--slagings-cbr-link);
+    text-decoration: underline;
+  }
+
+  .slagings-cbr:hover {
+    color: var(--slagings-cbr-hover);
+    text-decoration: underline;
+  }
+
   /** Location Map **/
   .location-map-section {
     width: 100%;
@@ -526,6 +544,7 @@
     align-items: center;
     border: solid 2px var(--primary-color);
     border-radius: 1rem;
+    box-shadow: 8px 8px 10px var(--shadow-color);
   }
 
   /** Contact Section **/
@@ -673,6 +692,27 @@
     align-items: center;
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .cbr-link-div {
+    background-color: var(--primary-color);
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+  }
+
+  .cbr-link-emoji {
+    margin-right: 0.2rem;
+    text-shadow: 1px 1px 5px var(--shadow-color);
+  }
+
+  .cbr-link {
+    color: var(--text-color);
+    text-decoration: underline;
   }
 
   .text-area {
@@ -1059,7 +1099,6 @@
     align-items: center;
     text-decoration: none;
     font-weight: 600;
-    border: 2px solid var(--dark-border);
     border-radius: 0.6rem;
   }
 
@@ -1069,6 +1108,7 @@
 
   .wpp-text {
     color: var(--body-text);
+    font-size: large;
   }
 
   /** Icons **/
@@ -1083,8 +1123,10 @@
   }
 
   .wpp {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 0.5rem;
-    padding: 3px;
+    padding: 0.24rem;
     background-color: var(--wppGreen);
     color: var(--white);
     text-shadow: 1px 1px 5px var(--shadow-color);
