@@ -28,7 +28,6 @@ export const Contact = () => {
             </div>
             <div className="display-flex-row mt-2">
                 <WhatsAppButton />
-                <p className='wpp-text ml-05'>Chat met WhatsApp</p>
             </div>
         </div>
     )

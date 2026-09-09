@@ -127,6 +127,7 @@
       from var(--electric-border-color) 0.3 calc(c / 2) h / 0.4
     );
     --color-neutral-900: oklch(0.185 0 0);
+    --price-color: var(--accent-color);
 
     /* Typography*/
     --body-font-family: 'Saira';
@@ -472,7 +473,7 @@
   }
 
   .price {
-    color: #fbbf24;
+    color: var(--price-color);
     font-size: 3rem;
     line-height: 3rem;
     font-weight: 500;
