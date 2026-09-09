@@ -66,6 +66,7 @@
     --translucent-color: rgba(255, 255, 255, 0.8);
     --dark-translucent-color: rgba(119, 119, 119, 0.8);
     --white: #ffffff;
+    --black: #000000;
 
     /* Layout Colors */
 
@@ -92,7 +93,7 @@
     --headings: var(--text-color);
     --btn-text-color: var(--text-color);
     --form-labels: var(--text-color);
-    --footer-text: var(--light-color);
+    --footer-text: var(--black);
     --hero-light-text: var(--light-color);
     --pricecard-text: var(--light-color);
 
@@ -105,10 +106,13 @@
 
     /* Details */
     --shadow-color: var(--dark-color);
-    --wppGreen: #25d366;
-    --nav-open-button-icon-color: var(--dark-color);
     --dark-border: var(--dark-color);
-    --algemene-voorwaarden-link: var(--light-color);
+    --translucent-accent-color: rgba(251, 191, 36, 0.8);
+    --translucent-primary-color: rgba(34, 197, 94, 0.8);
+    --translucent-secondary-color: rgba(34, 211, 238, 0.8);
+
+    /* Links */
+    --algemene-voorwaarden-link: var(--black);
     --consent-color: var(--text-color);
     --consent-hover-color: var(--supporting-color);
     --site-links-hover-color: var(--supporting-color);
@@ -116,18 +120,22 @@
     --slagings-cbr-hover: var(--light-color);
     --contact-link-color: var(--text-color);
     --contact-link-hover: var(--supporting-color);
-    --translucent-accent-color: rgba(251, 191, 36, 0.8);
-    --translucent-primary-color: rgba(34, 197, 94, 0.8);
-    --translucent-secondary-color: rgba(34, 211, 238, 0.8);
+
+    /* Icons */
+    --wppGreen: #25d366;
+    --nav-open-button-icon-color: var(--dark-color);
 
     /* PriceCard */
     --electric-border-color: var(--supporting-color);
     --electric-light-color: oklch(from var(--electric-border-color) l c h);
-    --gradient-color: oklch(
-      from var(--electric-border-color) 0.3 calc(c / 2) h / 0.4
-    );
+    --gradient-color: oklch(from var(--electric-border-color) 0.3 calc(c / 2) h / 0.4);
     --color-neutral-900: oklch(0.185 0 0);
     --price-color: var(--accent-color);
+
+    /* Radial Gradients */
+    --slagings-percentage-background: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    --cbr-link-background: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    --algemene-voorwaarden-background: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
 
     /* Typography*/
     --body-font-family: 'Saira';
@@ -155,7 +163,6 @@
 
   html, body {
     width: 100vw;
-
     position: relative;
     background-color: var(--page-background);
     font-family: var(--body-font-family), 'Courier New', Courier, monospace;
@@ -177,17 +184,12 @@
     text-decoration: underline;
   }
 
-  /* a:visited {
-    color: var(--link);
-  } */
-
-  footer a {
-    font-weight: 600;
-  }
-
-  footer a:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
+  .algemene-voorwaarden-div {
+    width: fit-content;
+    padding: 0.3rem 0.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--card-background);
+    background-image: var(--algemene-voorwaarden-background);
   }
 
   .algemene-voorwaarden {
@@ -196,6 +198,7 @@
   }
 
   .algemene-voorwaarden-link  {
+    font-weight: 600;
     color: var(--algemene-voorwaarden-link);
     text-decoration: underline;
   }
@@ -285,15 +288,15 @@
 
   @keyframes bounceUp {
     0%   { transform: translateY(0); }
-    10%  { transform: translateY(-2px); }
-    20%  { transform: translateY(-4px); }
-    30%  { transform: translateY(-6px); }
-    40%  { transform: translateY(-8px); }
-    50%  { transform: translateY(-10px); }
-    60%  { transform: translateY(-8px); }
-    70%  { transform: translateY(-6px); }
-    80%  { transform: translateY(-4px); }
-    90%  { transform: translateY(-2px); }
+    10%  { transform: translateY(-4px); }
+    20%  { transform: translateY(-6px); }
+    30%  { transform: translateY(-8px); }
+    40%  { transform: translateY(-12px); }
+    50%  { transform: translateY(-15px); }
+    60%  { transform: translateY(-12px); }
+    70%  { transform: translateY(-8px); }
+    80%  { transform: translateY(-6px); }
+    90%  { transform: translateY(-4px); }
     100% { transform: translateY(0); }
   }
 
@@ -513,7 +516,7 @@
 
   .slagings-percentage {
     background-color: var(--primary-color);
-    background-image: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    background-image: var(--slagings-percentage-background);
     border-radius: 0.4rem;
     padding: 0.5rem;
     box-shadow: 2px 2px 5px var(--shadow-color);
@@ -697,7 +700,7 @@
 
   .cbr-link-div {
     background-color: var(--primary-color);
-    background-image: radial-gradient(93% 87% at 87% 89%, rgba(251, 191, 36, 0.9) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(34, 211, 238, 0.1) 69.79%, rgba(34, 211, 238, 0.9) 100%);
+    background-image: var(--cbr-link-background);
     border-radius: 0.4rem;
     padding: 0.5rem;
     display: flex;
@@ -981,6 +984,7 @@
     backdrop-filter: blur(10px);
     padding: 1rem 0.8rem;
     font-size: 0.7rem;
+    color: var(--footer-text);
     margin-top: 2rem;
   }
 
@@ -994,6 +998,8 @@
   .footer-bottom {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
   }
 }
@@ -1010,6 +1016,7 @@
     width: 15rem;
     display: inline-block;
     padding: 0.7rem;
+    margin: 1rem;
     font-family: var(--btn-font);
     font-size: 1.6rem;
     font-weight: 500;

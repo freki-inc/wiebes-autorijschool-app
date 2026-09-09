@@ -20,7 +20,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 </Link>
 
                 {/* Hamburger menu icon */}
-                <button type="button" className="nav-open-button" onClick={onOpen}>
+                <button type="button" className="nav-open-button" aria-label="Menu" onClick={onOpen}>
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="none" 
@@ -39,15 +39,17 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 {/* Hamburger menu */}
                 <ul id="site-links" className={`site-links ${isOpen ? 'open' : ''}`}>
 
-                    <Link to="/" onClick={onClose}>
-                        <img
-                            src={logo} 
-                            alt="Wiebe’s Autorijschool"
-                            width="180rem"
-                            draggable={false}
-                            className="logo"
-                        />
-                    </Link>
+                    <li>
+                        <Link to="/" onClick={onClose}>
+                            <img
+                                src={logo} 
+                                alt="Wiebe’s Autorijschool"
+                                width="180rem"
+                                draggable={false}
+                                className="logo"
+                            />
+                        </Link>
+                    </li>
 
                     <li>
                         <button type="button" onClick={onClose}>
@@ -86,6 +88,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Home
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink to="/prijslijst" onClick={onClose}>
                             <svg 
@@ -102,9 +105,9 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                     />
                              </svg>
                              Prijslijst
-                        </NavLink>
-                        
+                        </NavLink>    
                     </li>
+
                     <li>
                         <NavLink to="/overons" onClick={onClose}>
                             <svg 
@@ -123,6 +126,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Over ons
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink to="/milieu" onClick={onClose}>
                             <svg 
@@ -141,6 +145,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Milieu
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink to="/walloffame" onClick={onClose}>
                             <svg 
@@ -159,6 +164,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Wall of Fame
                         </NavLink>   
                     </li>
+
                     <li>
                         <NavLink to="/examenchecklist" onClick={onClose}>
                             <svg 
@@ -177,6 +183,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Examen Checklist
                         </NavLink>
                     </li>
+
                     <li>
                         <NavLink to="/contact" onClick={onClose}>
                             <svg 
@@ -195,9 +202,8 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Contact
                         </NavLink>
                     </li>
+
                 </ul>
-
-
             </nav>
         </header>
     )

@@ -19,14 +19,14 @@ export const Hero = () => {
                     to="/contact" 
                     draggable={false}>
                     <button
-                        className="on-top prevent-select mt-1 cta-button" 
+                        className="on-top prevent-select cta-button" 
                         draggable={false}>
                             Proefles aanvragen    
                     </button>
                 </NavLink>
                 <span className="hand-bounce emoticons hero-slogan-2-emoji mt-05">&#128070;</span>
             </div>
-            <a href="#price" className="hero-down-position on-top">
+            <a href="#price" className="hero-down-position on-top" aria-label="Scroll down">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
