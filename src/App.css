@@ -87,6 +87,7 @@
     /* Backgrounds */
     --page-background: var(--background-color);
     --card-background: var(--background-color);
+    --privacy-modal-background: var(--background-color);
 
     /* Text */
     --body-text: var(--text-color);
@@ -184,7 +185,7 @@
     text-decoration: underline;
   }
 
-  .algemene-voorwaarden-div {
+  .algemene-voorwaarden-privacy-beleid-div {
     width: fit-content;
     padding: 0.3rem 0.3rem;
     border-radius: 0.2rem;
@@ -193,7 +194,7 @@
   }
 
   .algemene-voorwaarden {
-    padding: 2rem;
+    padding: 2rem 2rem 0;
     margin-top: 4rem;
   }
 
@@ -216,6 +217,48 @@
   .algemene-voorwaarden-contact-link:hover {
     color: var(--contact-link-hover);
     text-decoration: underline;
+  }
+
+  .privacy-policy {
+    padding: 2rem 2rem 0;
+    margin-top: 4rem;
+  }
+
+  .privacy-policy-link  {
+    font-weight: 600;
+    color: var(--algemene-voorwaarden-link);
+    text-decoration: underline;
+  }
+
+  .privacy-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  .privacy-modal {
+    background: var(--privacy-modal-background);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 480px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .privacy-text {
+    text-align: justify;
+  }
+
+  .privacy-actions {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
   }
 
   img {
@@ -810,7 +853,7 @@
 
   h3 {
     color: var(--section-headers);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   h4 {
@@ -977,7 +1020,7 @@
   /** Site Footer **/
   footer {
     width: 100vw;
-    height: 8rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     background-color: var(--nav-footer-background-color);

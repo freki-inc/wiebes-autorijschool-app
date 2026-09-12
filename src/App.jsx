@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { HomePage } from './components/HomePage'
+import { PrivacyPopup } from './components/PrivacyPopup'
 import { PrijslijstPage } from './components/PrijslijstPage'
 import { WallOfFamePage } from './components/WallOfFamePage'
 import { OverOnsPage } from './components/OverOnsPage'
@@ -19,6 +20,7 @@ function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
+      <PrivacyPopup />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/prijslijst' element={<PrijslijstPage />} />
