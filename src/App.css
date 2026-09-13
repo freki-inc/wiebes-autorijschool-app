@@ -120,7 +120,7 @@
     --slagings-cbr-link: var(--text-color);
     --slagings-cbr-hover: var(--light-color);
     --contact-link-color: var(--text-color);
-    --contact-link-hover: var(--supporting-color);
+    --contact-link-hover: var(--primary-color);
 
     /* Icons */
     --wppGreen: #25d366;
@@ -205,17 +205,7 @@
   }
 
   .algemene-voorwaarden-link:hover {
-    color: var(--highlight-color);
-    text-decoration: underline;
-  }
-
-  .algemene-voorwaarden-contact-link {
-    color: var(--contact-link-color);
-    text-decoration: underline;
-  }
-
-  .algemene-voorwaarden-contact-link:hover {
-    color: var(--contact-link-hover);
+    color: var(--primary-color);
     text-decoration: underline;
   }
 
@@ -227,6 +217,11 @@
   .privacy-policy-link  {
     font-weight: 600;
     color: var(--algemene-voorwaarden-link);
+    text-decoration: underline;
+  }
+
+  .privacy-policy-link:hover {
+    color: var(--primary-color);
     text-decoration: underline;
   }
 

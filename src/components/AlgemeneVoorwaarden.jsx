@@ -98,9 +98,11 @@ export const AlgemeneVoorwaarden = () => {
                 </ul>
                 <h2 className='mb-1'>Contact</h2>
                 <p className='mb-05'>Als U vragen heeft over deze Algemene Voorwaarden, kunt U contact met Ons opnemen door deze pagina op Onze website te bezoeken: </p>
-                <NavLink to="/contact"><p className='algemene-voorwaarden-contact-link mt-05'>https://www.wiebes-rijschool.nl/contact</p></NavLink>
+                <NavLink to="/contact"><p className='algemene-voorwaarden-link mt-05'>https://www.wiebes-rijschool.nl/contact</p></NavLink>
             </div>
             <Footer />
         </main>
     )
 }
+
+{/* Created by willemwebdev.com */}

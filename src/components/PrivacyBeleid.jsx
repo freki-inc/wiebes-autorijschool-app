@@ -42,26 +42,27 @@ export const PrivacyBeleid = () => {
                         </ul>
                     </li>
                     <li className='mb-05'>Doorgifte buiten de EU: Google kan gegevens verwerken in de Verenigde Staten. Google doet dit op basis van het EU-U.S. Data Privacy Framework en/of modelcontractbepalingen (Standard Contractual Clauses).</li>
-                    <li className='mb-05'>Meer informatie: <a className='privacy-policy-link' href='https://policies.google.com/privacy' target='_blank'>Privacybeleid van Google</a></li>
+                    <li className='mb-02'>Meer informatie:</li>
+                    <li className='mb-1'><a className='privacy-policy-link' href='https://policies.google.com/privacy' target='_blank'>Privacybeleid van Google</a></li>
                 </ul>
-                <p className='mb-1'><strong>Let op: als de kaart pas na een klik van de bezoeker wordt geladen (of pas na toestemming via een cookiebanner), is er geen aparte cookietoestemming vooraf nodig. Laadt de kaart automatisch bij elk bezoek, dan is doorgaans wél voorafgaande toestemming vereist.</strong></p>
                 
                 <h2 className='mb-1'>5. WhatsApp</h2>
                 <p className='mb-1'>Op onze website staat een link waarmee u, indien u dat wilt, via WhatsApp contact met ons kunt opnemen. Deze link opent de WhatsApp-app of -website; wijzelf verwerken hierbij geen gegevens via onze website. Zodra u via WhatsApp contact opneemt, is dat gesprek onderworpen aan het privacybeleid van WhatsApp/Meta.</p>
-                <p className='mb-1'>Meer informatie: <a className='privacy-policy-link' href='https://www.whatsapp.com/legal/privacy-policy' target='_blank'>Privacybeleid van WhatsApp</a></p>
-
+                <p className='mb-02'>Meer informatie:</p>
+                <p className='mb-1'><a className='privacy-policy-link' href='https://www.whatsapp.com/legal/privacy-policy' target='_blank'>Privacybeleid van WhatsApp</a></p>
+                
                 <h2 className='mb-1'>6. Cookies</h2>
                 <p className='mb-1'>Deze website plaatst geen eigen tracking- of marketingcookies. De enige cookies die mogelijk worden geplaatst, zijn afkomstig van de ingesloten Google Maps-kaart (zie punt 4) [en eventueel: functionele cookies die noodzakelijk zijn voor de werking van de website].</p>
 
                 <h2 className='mb-1'>7. Uw rechten</h2>
                 <p className='mb-1'>U heeft het recht om:</p>
                 <ul>
-                    <li className='mb-05'>inzage te vragen in de gegevens die wij (via serverlogs) over u verwerken;</li>
-                    <li className='mb-05'>correctie of verwijdering van uw gegevens te vragen;</li>
-                    <li className='mb-05'>bezwaar te maken tegen verwerking op basis van gerechtvaardigd belang;</li>
-                    <li className='mb-05'>een klacht in te dienen bij de Autoriteit Persoonsgegevens (<a className='privacy-policy-link' href='https://www.autoriteitpersoonsgegevens.nl/' target='_blank'>autoriteitpersoonsgegevens.nl</a>).</li>
+                    <li className='mb-05'>- inzage te vragen in de gegevens die wij (via serverlogs) over u verwerken;</li>
+                    <li className='mb-05'>- correctie of verwijdering van uw gegevens te vragen;</li>
+                    <li className='mb-05'>- bezwaar te maken tegen verwerking op basis van gerechtvaardigd belang;</li>
+                    <li className='mb-05'>- een klacht in te dienen bij de Autoriteit Persoonsgegevens (<a className='privacy-policy-link' href='https://www.autoriteitpersoonsgegevens.nl/' target='_blank'>autoriteitpersoonsgegevens.nl</a>).</li>
                 </ul>
-                <p className='mb-1'>Voor vragen over deze verklaring of uw gegevens kunt u contact opnemen via [e-mailadres].</p>
+                <p className='mb-1'>Voor vragen over deze verklaring of uw gegevens kunt u contact opnemen via <NavLink to="/contact"><span className='algemene-voorwaarden-link'>https://www.wiebes-rijschool.nl/contact</span></NavLink></p>
                 <h2 className='mb-1'>8. Wijzigingen</h2>
                 <p>Wij kunnen deze privacyverklaring van tijd tot tijd aanpassen, bijvoorbeeld bij wijzigingen in de website of wetgeving. De meest actuele versie is altijd op deze pagina te vinden.</p>
             </div>

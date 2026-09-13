@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const STORAGE_KEY = 'privacyAndTermsAccepted'; // if terms are updated, change this key
+const STORAGE_KEY = 'privacyAndTermsAccepted3'; // if terms are updated, change this key
 
 export const PrivacyPopup = () => {
     const [visible, setVisible] = useState(false);
@@ -25,7 +25,7 @@ export const PrivacyPopup = () => {
             <div className="privacy-modal">
                 <h2 className='mb-05'>Privacy Beleid & Algemene Voorwaarden</h2>
                 <p className='privacy-text'>
-                Door deze site te gebruiken, gaat u akkoord met ons <NavLink to="/privacybeleid"><span className="privacy-policy-link">Privacybeleid</span></NavLink> en onze <NavLink to="/algemenevoorwaarden"><span className="algemene-voorwaarden-link"> Algemene Voorwaarden</span></NavLink>.
+                Door deze site te gebruiken, gaat u akkoord met ons <Link to="/privacybeleid"><span className="privacy-policy-link">Privacybeleid</span></Link> en onze <Link to="/algemenevoorwaarden"><span className="algemene-voorwaarden-link"> Algemene Voorwaarden</span></Link>.
                 </p>
                 <div className="privacy-actions">
                 <button className='secondary-button' onClick={handleAccept}>Ik ga akkoord</button>

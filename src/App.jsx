@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 
 import { HomePage } from './components/HomePage'
 import { PrivacyPopup } from './components/PrivacyPopup'
@@ -15,12 +15,18 @@ import ScrollToTop from './components/ScrollToTop'
 
 import './App.css'
 
-function App() {
+function AppContent() {
+  const location = useLocation()
+
+  // Hide the popup on these two pages
+  const hidePopup =
+    location.pathname === '/privacybeleid' ||
+    location.pathname === '/algemenevoorwaarden'
 
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL}>
+    <>
+      {!hidePopup && <PrivacyPopup />}
       <ScrollToTop />
-      <PrivacyPopup />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/prijslijst' element={<PrijslijstPage />} />
@@ -33,8 +39,15 @@ function App() {
         <Route path='/milieu' element={<MilieuPage />} />
         <Route path='/dankjewel' element={<DankjewelPage />} />
       </Routes>
-    </BrowserRouter>
+    </>
+  )
+}
 
+function App() {
+  return (
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <AppContent />
+    </BrowserRouter>
   )
 }
 
