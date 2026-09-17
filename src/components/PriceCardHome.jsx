@@ -38,7 +38,7 @@ export const PriceCardHome = ({
                                   <div className="scrollbar-glass">
                                       {badgeText}
                                   </div>
-                                  <p className="price-crossed-out crossed-out">{oldPrice}</p>
+                                  <p className="price-crossed-out crossed-out mb-05">{oldPrice}</p>
                                   <div className="display-flex-row">
                                       <p className="price mr-05"> {price}</p>
                                       <p>{priceUnit}</p>

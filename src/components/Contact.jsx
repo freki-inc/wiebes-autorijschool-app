@@ -27,6 +27,7 @@ export const Contact = () => {
                 <p className="mt-1">Geef daarbij ook aan of je in een automaat of handgeschakelde auto wilt rijden.</p>
             </div>
             <div className="display-flex-row mt-2">
+                <span className="hand-point emoticons hero-slogan-2-emoji mr-1">&#128073;</span>
                 <WhatsAppButton />
             </div>
         </div>

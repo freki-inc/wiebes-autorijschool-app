@@ -16,7 +16,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <div className="algemene-voorwaarden-privacy-beleid-div">
+                <div className="algemene-voorwaarden-privacy-beleid-div mb-05">
                     <NavLink to="/algemenevoorwaarden"><p className="algemene-voorwaarden-link">Algemene Voorwaarden Wiebe’s Autorijschool</p></NavLink>
                     <NavLink to="/privacybeleid"><p className="privacy-policy-link">Privacy Beleid Wiebe’s Autorijschool</p></NavLink>
                 </div>

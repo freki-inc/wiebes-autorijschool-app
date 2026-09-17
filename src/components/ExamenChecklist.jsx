@@ -27,16 +27,20 @@ export const ExamenChecklist = () => {
             <p className="mb-1">Voordat jouw examen aangevraagd kan worden bij het cbr, moet jij de volgende zaken regelen door op de onderstaande links te clicken:</p>
             <div className='cbr-link-div'>
                 <div className='display-flex-row mb-05'>
-                    <p className='cbr-link-emoji'>&#128073;  </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Freserveren' target='_blank'>Haal je theorie</a>
+                    <p className='cbr-link-emoji'>&#128073; </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Freserveren' target='_blank'>Haal je theorie</a>
                 </div>
                 <div className='display-flex-row mb-05'>
-                    <p className='cbr-link-emoji'>&#128073;  </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fgezondheidsverklaring' target='_blank'>Vul je gezondheidsverklaring</a>    
+                    <p className='cbr-link-emoji'>&#128073; </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fgezondheidsverklaring' target='_blank'>Vul je gezondheidsverklaring</a>    
                 </div>
                 <div className='display-flex-row mb-05'>
-                    <p className='cbr-link-emoji'>&#128073;  </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fopleider-machtigen' target='_blank'>Machtig de rijschool (rijschoolnummer: 4724Z1)</a>
+                    <p className='cbr-link-emoji'>&#128073; </p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fopleider-machtigen' target='_blank'>Machtig de rijschool (rijschoolnummer: 4724Z1)</a>
                 </div>
             </div>
-            <p className='mt-1'>Controleer de geldigheidsdatum van je identiteitsbewijs, geen id = geen examen</p>
+            <div className='center-text'>
+                <p className='mt-1'>Controleer de geldigheidsdatum van je identiteitsbewijs:</p>
+                <p>geen id = geen examen</p>
+            </div>
+
         </div>
     )
 }
