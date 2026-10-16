@@ -73,6 +73,8 @@ import wof70 from '../assets/images/wof/wof70.webp';
 import wof71 from '../assets/images/wof/wof71.webp';
 import wof72 from '../assets/images/wof/wof72.webp';
 import wof73 from '../assets/images/wof/wof73.webp';
+import wof74 from '../assets/images/wof/wof74.webp';
+import wof75 from '../assets/images/wof/wof75.webp';
 
 export const WallOfFameGrid = () => {
 
@@ -152,10 +154,12 @@ export const WallOfFameGrid = () => {
         { src: wof71, alt: 'geslaagde leerling'},
         { src: wof72, alt: 'geslaagde leerling'},
         { src: wof73, alt: 'geslaagde leerling'},
+        { src: wof74, alt: 'geslaagde leerling'},
+        { src: wof75, alt: 'geslaagde leerling'},
       ]
     
     return (
-        <div className='wall-of-fame-section'>
+        <section className='wall-of-fame-section mt-5'>
             <h3 className='wall-of-fame-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -217,7 +221,7 @@ export const WallOfFameGrid = () => {
                     </div>
                 )}
             </div>
-        </div>            
+        </section>            
     )
 }
 

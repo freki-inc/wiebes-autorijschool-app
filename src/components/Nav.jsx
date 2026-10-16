@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
-import { useState } from 'react'
+import { useState } from 'react';
 
-import logo from "../assets/images/logo.webp"
+import logo from "../assets/images/logo.webp";
 
 const NavLogic = ({ isOpen, onOpen, onClose }) => {
     return (
@@ -13,7 +13,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     <img
                         src={logo} 
                         alt="Wiebe’s Autorijschool"
-                        width="180rem"
+                        height="4rem"
                         draggable={false}
                         className="logo">
                     </img>
@@ -21,6 +21,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
 
                 {/* Hamburger menu icon */}
                 <button type="button" className="nav-open-button" aria-label="Menu" onClick={onOpen}>
+                    {/* &#128678; */}
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
                         fill="none" 
@@ -44,9 +45,9 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             <img
                                 src={logo} 
                                 alt="Wiebe’s Autorijschool"
-                                width="180rem"
+                                height="8rem"
                                 draggable={false}
-                                className="logo"
+                                className="logo-menu"
                             />
                         </Link>
                     </li>
@@ -58,7 +59,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 fill="none" viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon"
+                                className="icon-menu"
                             >
                                 <path 
                                     strokeLinecap="round" 
@@ -78,7 +79,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -97,7 +98,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -116,7 +117,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -135,7 +136,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -154,7 +155,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -173,7 +174,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -192,7 +193,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon">
+                                className="icon-menu">
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 

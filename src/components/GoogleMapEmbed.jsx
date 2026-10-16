@@ -3,7 +3,7 @@ export const GoogleMapEmbed = () => {
   const encodedAddress = encodeURIComponent(address);
 
       return (
-        <div className="location-map-section mt-5">
+        <section className="location-map-section mt-5">
           <h3 className='location-map-title'>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
@@ -25,17 +25,20 @@ export const GoogleMapEmbed = () => {
             </svg>
             Start Locatie
           </h3>
-          <iframe
-            title="Location map"
-            width="320px"
-            height="350px"
-            className="location-map"
-            loading="lazy"
-            allowFullScreen
-            referrerPolicy="strict-origin-when-cross-origin"
-            src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=${encodedAddress}`}
-          />
-        </div>
+          <div className="location-map-border">
+            <iframe
+              title="Location map"
+              width="320px"
+              height="350px"
+              className="location-map"
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=${encodedAddress}`}
+            />
+          </div>
+
+        </section>
       );
 }
 

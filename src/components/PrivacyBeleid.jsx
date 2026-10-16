@@ -8,7 +8,7 @@ export const PrivacyBeleid = () => {
     return (
         <main>
             <NavBeleid />
-            <div className='privacy-policy'>
+            <section className='privacy-policy'>
                 <h1 className='center-text mb-1'>Privacybeleid Autorijschool Rijvolutie</h1>
                 <p className='mb-05'>Laatst bijgewerkt: 11 augustus 2026</p>
                 <p className='mb-1'>Deze website wordt beheerd door [naam bedrijf / eenmanszaak], gevestigd te [plaats], ingeschreven bij de KvK onder nummer [KvK-nummer] ("wij", "ons"). Wij hechten waarde aan de privacy van bezoekers van onze website en zijn transparant over welke gegevens er worden verwerkt.</p>
@@ -59,7 +59,7 @@ export const PrivacyBeleid = () => {
                 <p className='mb-1'>Voor vragen over deze verklaring of uw gegevens kunt u contact opnemen via <NavLink to="/contact"><span className='algemene-voorwaarden-link'>https://www.wiebes-rijschool.nl/contact</span></NavLink></p>
                 <h2 className='mb-1'>8. Wijzigingen</h2>
                 <p>Wij kunnen deze privacyverklaring van tijd tot tijd aanpassen, bijvoorbeeld bij wijzigingen in de website of wetgeving. De meest actuele versie is altijd op deze pagina te vinden.</p>
-            </div>
+            </section>
             <Footer />
         </main>
     )

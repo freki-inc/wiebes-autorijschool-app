@@ -1,6 +1,6 @@
 export const Milieu = () => {
     return (
-        <div className='milieu-section mt-5'>
+        <section className='milieu-section mt-5'>
             <h3 className='milieu-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -18,7 +18,7 @@ export const Milieu = () => {
                 Milieu
             </h3>                
                 <p className='mb-1'>Milieu text</p>
-        </div>
+        </section>
     )
 
 }

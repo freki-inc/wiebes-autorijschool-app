@@ -14,7 +14,7 @@ export const AlgemeneVoorwaarden = () => {
             onOpen={() => setIsNavOpen(true)}
             onClose={() => setIsNavOpen(false)}
             />
-            <div className='algemene-voorwaarden'>
+            <section className='algemene-voorwaarden'>
                 <h1 className='center-text mb-1'>Algemene Voorwaarden Autorijschool Rijvolutie</h1>
                 <p className='mb-05'>Laatst bijgewerkt: 11 augustus 2026</p>
                 <p className='mb-1'>Deze algemene voorwaarden zijn van toepassing op alle overeenkomsten die worden aangegaan met Wiebe’s autorijschool, als wel op iedereen die lessen volgt of andere diensten afneemt van deze rijschool. Hierin staan alle afspraken die nageleefd moeten worden door de rijschool en de leerlingen.</p>
@@ -99,7 +99,7 @@ export const AlgemeneVoorwaarden = () => {
                 <h2 className='mb-1'>Contact</h2>
                 <p className='mb-05'>Als U vragen heeft over deze Algemene Voorwaarden, kunt U contact met Ons opnemen door deze pagina op Onze website te bezoeken: </p>
                 <NavLink to="/contact"><p className='algemene-voorwaarden-link mt-05'>https://www.wiebes-rijschool.nl/contact</p></NavLink>
-            </div>
+            </section>
             <Footer />
         </main>
     )

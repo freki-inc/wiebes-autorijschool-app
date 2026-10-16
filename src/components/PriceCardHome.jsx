@@ -8,13 +8,13 @@ export const PriceCardHome = ({
     descriptions = [
         "Meerdere pakketen beschikbaar.",
         "Gespreid betalen mogelijk.",
-        "Plan GRATIS lessen in de app."
+        "Plan lessen in de GRATIS app."
     ],
     buttonText = "Tarieven en Pakketen",
     buttonLink = "/prijslijst"
 }) => {
     return (
-        <div id="price" className="tarieven-section mt-5">
+        <section id="price" className="tarieven-section mt-5">
           <h3 className="tarief-titel">
               <svg 
                   xmlns="http://www.w3.org/2000/svg" 
@@ -32,23 +32,25 @@ export const PriceCardHome = ({
               Tarieven
           </h3>
           <div className="card-container">
-                      <div className="main-card">
+                      <div className="home-price-card">
                           <div className="content-container">
-                              <div className="content-top">
-                                  <div className="scrollbar-glass">
-                                      {badgeText}
+                              <div className="home-content-top">
+                                  <div className="card-title">
+                                    <div className="card-title-border">
+                                        {badgeText}
+                                    </div>
                                   </div>
-                                  <p className="price-crossed-out crossed-out mb-05">{oldPrice}</p>
+                                  <del className="price-crossed-out mb-05">{oldPrice}</del>
                                   <div className="display-flex-row">
                                       <p className="price mr-05"> {price}</p>
-                                      <p>{priceUnit}</p>
+                                      <p className="price-unit">{priceUnit}</p>
                                   </div>
                               </div>
 
                               <div className="content-bottom">
                                   {descriptions.map((text, index) => (
                                     <p key={index} className="description">
-                                        <span>&#128073;</span>{text}
+                                        <span>&#x2705; </span>{text}
                                     </p>
                                   ))}
                               </div>
@@ -67,7 +69,7 @@ export const PriceCardHome = ({
                           </div>
                       </div>
           </div>
-        </div>
+        </section>
     )
 }
 

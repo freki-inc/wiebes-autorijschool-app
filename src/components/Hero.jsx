@@ -3,17 +3,31 @@ import heroImg from "../assets/images/hero-img.webp"
 
 export const Hero = () => {
     return (
-        <div className="hero-section mt-4">
-            <img src={heroImg} fetchPriority="high" className="hero-img" title="Wiebe’s Rijschool" alt="rijinstructeur Wiebe" draggable={false}></img>
-            <div className="hero-call on-top">
-                <p className="hero-slogan-1 on-top mt-1">
+        <section className="hero-section mt-4">
+            <div className="hero-img-wrapper">
+                <img 
+                    src={heroImg} 
+                    fetchPriority="high" 
+                    className="hero-img" 
+                    title="Wiebe’s Rijschool" 
+                    alt="rijinstructeur Wiebe" 
+                    draggable={false}
+                >
+                </img>
+            </div>
+
+            <div className="hero-content">
+                <p className="hero-slogan">
                 <span className="emoticons">
                     &#128526;
                 </span> 
                     ¡Viva la Rijvolutie!
                 <span className="emoticons">
-                    &#128076;
+                    &#x270A;
                 </span>
+                </p>
+                <p className="hero-text-1">
+                    Autorijschool in Leiden. Leer rijden in een Tesla (automaat) of Opel Mokka (schakel).
                 </p>
                 <NavLink 
                     to="/contact" 
@@ -24,9 +38,11 @@ export const Hero = () => {
                             Proefles aanvragen    
                     </button>
                 </NavLink>
-                <span className="hand-bounce emoticons hero-slogan-2-emoji mt-05">&#128070;</span>
+                <span className="hand-bounce emoticons hero-hand-emoji mt-05">&#128070;</span>
+                <p className="hero-text-2">Proefles van 60 minuten voor €50</p>
             </div>
-            <a href="#price" className="hero-down-position on-top" aria-label="Scroll down">
+
+            {/* <a href="#price" className="hero-down-position on-top" aria-label="Scroll down">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -39,8 +55,8 @@ export const Hero = () => {
                         strokeLinejoin="round" 
                         d="m19.5 8.25-7.5 7.5-7.5-7.5" />
                 </svg>
-            </a>
-        </div>
+            </a> */}
+        </section>
     )
 }
 

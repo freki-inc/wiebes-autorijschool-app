@@ -1,18 +1,23 @@
 export const PriceCard = ({
     badgeText = "Proefles van 60 min",
     text = "Les van 60 min, persoonlijk plan van aanpak",
-    price = "€50 per les",
+    price = "€50,-",
 }) => {
     return (
         <div id="price" className="card-container mb-2">
-            <div className="main-card-price-card">
-                <div className="content-top display-flex-row">
-                    <div className="scrollbar-glass">
-                        {badgeText}
+            <div className="price-card">
+                <div className="content-top">
+                    <div className="card-title">
+                        <div className="card-title-border">
+                            {badgeText}
+                        </div>
                     </div>
-                    <p className="description mb-05">
-                        <span>&#128073;</span>{text}
-                    </p>
+                    <div className="description-wrapper mb-1">
+                        <span>&#x2705;</span>
+                        <p className="description">
+                            {text}
+                        </p>
+                    </div>
                     <p className="price"> {price}</p>
                 </div>
             </div>

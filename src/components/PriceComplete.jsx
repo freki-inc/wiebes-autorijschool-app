@@ -2,7 +2,7 @@ import { PriceCard } from "./PriceCard"
 
 export const PriceComplete = () => {
     return (
-        <div className="tarieven-section mt-5 p-b-1">
+        <section className="tarieven-section mt-5 p-b-1">
             <h3 className="tarief-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -47,7 +47,7 @@ export const PriceComplete = () => {
                 />
                 <PriceCard 
                     badgeText="Tussentijdse toets"
-                    text="50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans"
+                    text="50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans."
                     price="€ 235,-"
                 />
                 <PriceCard 
@@ -58,7 +58,7 @@ export const PriceComplete = () => {
             </div>
             
                 <p className="tarief-fineprint">*Alleen mogelijk na aanschaf basis pakket</p>
-        </div>    
+        </section>    
     )
 }
 
