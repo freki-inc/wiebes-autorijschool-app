@@ -911,6 +911,22 @@
     box-shadow: 2px 2px 5px var(--shadow-color);
   }
 
+  .cbr-link-theorie {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .cbr-link-theorie li {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .li-theorie-note {
+    font-size: 0.8rem;
+    
+  }
+
   .cbr-link-emoji {
     margin-right: 0.2rem;
     text-shadow: 1px 1px 5px var(--shadow-color);

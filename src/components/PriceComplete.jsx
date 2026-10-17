@@ -28,32 +28,37 @@ export const PriceComplete = () => {
                 <PriceCard 
                     badgeText="Basispakket"
                     text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €70 per uur! Inclusief praktijkexamen"
-                    price="€ 825,-"
+                    price="€ 890,-"
                 />
                 <PriceCard 
                     badgeText="Uitbreidingspakket"
                     text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 70 per uur! Extra voordelig! *"
+                    price="€ 560,-"
+                />
+                <PriceCard 
+                    badgeText="Herkansingspakket"
+                    text="6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50,- per uur!! Herexamen praktijk voor €175,-"
                     price="€ 525,-"
                 />
                 <PriceCard 
                     badgeText="Losse Les"
                     text="90 min per les. Prive les. Extra voordelig!"
-                    price="€ 70,-"
+                    price="€ 75,-"
                 />
                 <PriceCard 
-                    badgeText="Herkansingspakket"
-                    text="6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50,- per uur!! Herexamen praktijk voor €175,-"
-                    price="€ 475,-"
+                    badgeText="Faalangst Examen"
+                    text="Meer aandacht met mogelijkheid tot time-out. Vergrote slagingskans."
+                    price="€ 345,-"
                 />
                 <PriceCard 
                     badgeText="Tussentijdse toets"
                     text="50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans."
-                    price="€ 235,-"
+                    price="€ 305,-"
                 />
                 <PriceCard 
                     badgeText="Praktijkexamen"
                     text="50 minuten inrijden. Afrijden bij het CBR. Nabespreking."
-                    price="€ 300,-"
+                    price="€ 330,-"
                 />
             </div>
             

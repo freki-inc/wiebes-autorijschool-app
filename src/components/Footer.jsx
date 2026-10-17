@@ -5,7 +5,7 @@ export const Footer = () => {
         <footer>
             <div className="footer-top mb-05">
                 <div className="footer-left">
-                    <p><strong className="footer-highlight">Rijinstructeur:</strong> Wiebe</p>
+                    <p><strong className="footer-highlight">Rijinstructeur:</strong> Wiebe Spierenburg</p>
                     <p><strong className="footer-highlight">Tel:</strong> +31 6 19617569</p>
                     <p><strong className="footer-highlight">KVK nummer:</strong> 63176734</p>
                 </div>

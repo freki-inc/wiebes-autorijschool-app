@@ -25,7 +25,6 @@ export const Contact = () => {
                 <img src={contactImg} alt="rijinstructeur"></img>
                 <div className="contact-text">
                     <p className="mt-1">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 60 min.</p>
-                    <p className="mt-1">Geef daarbij ook aan of je in een automaat of handgeschakelde auto wilt rijden.</p>
                 </div>
 
             </div>

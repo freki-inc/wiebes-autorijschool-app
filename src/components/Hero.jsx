@@ -27,7 +27,7 @@ export const Hero = () => {
                 </span>
                 </p>
                 <p className="hero-text-1">
-                    Autorijschool in Leiden. Leer rijden in een Tesla (automaat) of Opel Mokka (schakel).
+                    Leer autorijden als een baas. Rij in een moderne opel mokka (handgeschakeld) of een Tesla (automaat).
                 </p>
                 <NavLink 
                     to="/contact" 

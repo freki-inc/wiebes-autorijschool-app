@@ -22,12 +22,16 @@ export const OverOns = () => {
             </h3>                
             <img src={tesla} alt='tesla auto' draggable={false}></img>
             <div className='overons-text p-2'>
-                <p className='mb-2'>Bij Wiebe’s autorijschool zul je je zeker op je gemak voelen. Er zijn twee opties beschikbaar om te leren autorijden, een Tesla (automaat) en een Opel Mokka (schakkel).</p>
+                <p className='mb-2'>
+                    Wiebes autorijschool, een begrip in Leiden gooit het roer om en begint een rijvolutie. 
+                    Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
+                    100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 
+                    Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.</p>
                 <button className='center-text slagings-percentage'><a href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'>Bekijk mijn slagingspercentage</a></button>
             </div>
             <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
             <div className='p-tlr-2'>
-                <p className='overons-text'>In deze auto's geeft de instructeur namelijk op een betrokken en prettige manier prive les. Iedere leerling kan pakketten op maat samenstellen, zodat ook jij op de beste manier naar je rijbewijs toe kunt werken.</p>
+                <p className='overons-text'>Je kunt kiezen of je wilt rijden in een handgeschakelde opel mokka die op neste my renewable diesel rijd of een Tesla die met groene stroom wordt geladen.</p>
             </div>
         </section>
     )

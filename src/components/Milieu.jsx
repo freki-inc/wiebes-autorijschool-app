@@ -1,3 +1,5 @@
+import milieu from '../assets/images/milieu.webp';
+
 export const Milieu = () => {
     return (
         <section className='milieu-section mt-5'>
@@ -16,8 +18,11 @@ export const Milieu = () => {
                         />
                 </svg>
                 Milieu
-            </h3>                
-                <p className='mb-1'>Milieu text</p>
+            </h3>
+                <img className='mb-1' src={milieu} alt="tesla rijd door bos" />            
+                <p className='mb-1'>Bij Rijvolutie zetten wij ons in voor een groene toekomst. Daarom hebben wij het roer helemaal omgegooid. Geen compromissen meer nodig. Onze handgeschakelde diesel rijd op renewable brandstof.</p>
+                <p className='mb-1'>Hiermee hoop ik tot wel 90% co2 uitstoot te besparen.  De automaat  is een van de meest efficiënte ev's van het moment. Een 2026 Tesla model 3 long range. Deze laad ik op met groene stroom.</p>
+                <p className='mb-1'> Zo kunnen wij samen ons steentje bijdragen aan een betere toekomst zonder dat er een compromis gemaakt hoeft te worden in de keuze voor automaat of niet.</p>
         </section>
     )
 

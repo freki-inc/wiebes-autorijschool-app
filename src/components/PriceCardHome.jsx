@@ -6,9 +6,9 @@ export const PriceCardHome = ({
     price = "€70",
     priceUnit = "per uur",
     descriptions = [
-        "Meerdere pakketen beschikbaar.",
-        "Gespreid betalen mogelijk.",
-        "Plan lessen in de GRATIS app."
+        "Basispakket",
+        "Uitbreidingspakket",
+        "Herkansingspakket"
     ],
     buttonText = "Tarieven en Pakketen",
     buttonLink = "/prijslijst"
@@ -40,7 +40,7 @@ export const PriceCardHome = ({
                                         {badgeText}
                                     </div>
                                   </div>
-                                  <del className="price-crossed-out mb-05">{oldPrice}</del>
+                                  {/* <del className="price-crossed-out mb-05">{oldPrice}</del> */}
                                   <div className="display-flex-row">
                                       <p className="price mr-05"> {price}</p>
                                       <p className="price-unit">{priceUnit}</p>
