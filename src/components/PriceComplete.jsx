@@ -27,42 +27,43 @@ export const PriceComplete = () => {
                 <PriceCard />
                 <PriceCard 
                     badgeText="Basispakket"
-                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €70 per uur! Inclusief praktijkexamen"
+                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €75 per uur! Inclusief praktijkexamen."
                     price="€ 890,-"
                 />
                 <PriceCard 
                     badgeText="Uitbreidingspakket"
-                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 70 per uur! Extra voordelig! *"
+                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 75 per uur! Extra voordelig!"
                     price="€ 560,-"
+                    observation="*Alleen mogelijk na aanschaf basis pakket."
                 />
+                
                 <PriceCard 
                     badgeText="Herkansingspakket"
-                    text="6 uur rijles (4 Lessen van 1.5 uur en herexamen voor €175) Lessen voor €50,- per uur!! Herexamen praktijk voor €175,-"
+                    text="6 uur rijles (4 Lessen van 1.5 uur) Lessen voor €55,- per uur!! Herexamen praktijk voor €195,-"
                     price="€ 525,-"
                 />
                 <PriceCard 
                     badgeText="Losse Les"
-                    text="90 min per les. Prive les. Extra voordelig!"
+                    text="60 min per les. Prive les. Extra voordelig!"
                     price="€ 75,-"
                 />
                 <PriceCard 
                     badgeText="Faalangst Examen"
-                    text="Meer aandacht met mogelijkheid tot time-out. Vergrote slagingskans."
+                    text="Incl. 50 min inrijden. Meer aandacht met mogelijkheid tot time-out. Vergrote slagingskans."
                     price="€ 345,-"
                 />
                 <PriceCard 
                     badgeText="Tussentijdse toets"
-                    text="50 minuten inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans."
+                    text="Incl. 50 min inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans."
                     price="€ 305,-"
                 />
                 <PriceCard 
                     badgeText="Praktijkexamen"
-                    text="50 minuten inrijden. Afrijden bij het CBR. Nabespreking."
+                    text="Incl. 50 min inrijden. Afrijden bij het CBR. Nabespreking."
                     price="€ 330,-"
                 />
             </div>
             
-                <p className="tarief-fineprint">*Alleen mogelijk na aanschaf basis pakket</p>
         </section>    
     )
 }

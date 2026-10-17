@@ -1,7 +1,8 @@
 export const PriceCard = ({
     badgeText = "Proefles van 60 min",
-    text = "Les van 60 min, persoonlijk plan van aanpak",
+    text = "Les van 60 min, persoonlijk plan van aanpak.",
     price = "€50,-",
+    observation = "",
 }) => {
     return (
         <div id="price" className="card-container mb-2">
@@ -19,6 +20,7 @@ export const PriceCard = ({
                         </p>
                     </div>
                     <p className="price"> {price}</p>
+                    <p className="observation">{observation}</p>
                 </div>
             </div>
         </div>

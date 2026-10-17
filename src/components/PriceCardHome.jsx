@@ -2,15 +2,15 @@ import { NavLink } from "react-router-dom";
 
 export const PriceCardHome = ({
     badgeText = "Begin nu je opleiding!",
-    oldPrice = "€105",
-    price = "€70",
+    // oldPrice = "€105",
+    price = "€75",
     priceUnit = "per uur",
-    descriptions = [
-        "Basispakket",
-        "Uitbreidingspakket",
-        "Herkansingspakket"
-    ],
-    buttonText = "Tarieven en Pakketen",
+    // descriptions = [
+    //     "Basispakket",
+    //     "Uitbreidingspakket",
+    //     "Herkansingspakket"
+    // ],
+    buttonText = "Tarieven en Pakketten",
     buttonLink = "/prijslijst"
 }) => {
     return (
@@ -47,13 +47,13 @@ export const PriceCardHome = ({
                                   </div>
                               </div>
 
-                              <div className="content-bottom">
+                              {/* <div className="content-bottom">
                                   {descriptions.map((text, index) => (
                                     <p key={index} className="description">
                                         <span>&#x2705; </span>{text}
                                     </p>
                                   ))}
-                              </div>
+                              </div> */}
 
                               <div className="display-flex-column ht-100 mb-2">
                                   <NavLink 

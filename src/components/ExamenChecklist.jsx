@@ -30,7 +30,7 @@ export const ExamenChecklist = () => {
                         <p className='mr-05'><span className='cbr-link-emoji '>&#x2705; </span>Haal je theorie:</p>
                         <ul>
                             <li><a className='cbr-link' href='https://www.itheorie.nl/' target='_blank'>Theorie Cursus itheorie.nl</a></li>
-                            <li className='li-theorie-note'><span className='cbr-link-emoji '>&#x1F446; </span>Krijg 50% korting code als mijn leerling! Vraag het nu aan.</li>
+                            <li className='li-theorie-note'><span className='cbr-link-emoji '>&#x1F446; </span>Koop bij mij je theorie cursus en krijg 50% korting! Vraag het nu aan.</li>
                             <li><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Freserveren' target='_blank'>Theorie boeken CBR</a></li>
                         </ul>
                     </div>

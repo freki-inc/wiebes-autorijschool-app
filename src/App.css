@@ -589,6 +589,12 @@
     padding: 0 0 1rem;
   }
 
+  .observation {
+    font-size: 0.7rem;
+    color: var(--hero-gray-text);
+    text-align: center;
+  }
+
   .description-wrapper {
     display: flex;
     padding: 0 1rem;
