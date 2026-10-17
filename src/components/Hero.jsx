@@ -27,7 +27,7 @@ export const Hero = () => {
                 </span>
                 </p>
                 <p className="hero-text-1">
-                    Leer autorijden als een baas. Rij in een moderne opel mokka (handgeschakeld) of een Tesla (automaat).
+                    Leer autorijden als een baas. Rij in een moderne Opel Mokka (handgeschakeld) of een Tesla (automaat).
                 </p>
                 <NavLink 
                     to="/contact" 
