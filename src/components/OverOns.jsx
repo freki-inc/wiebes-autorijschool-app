@@ -3,7 +3,7 @@ import tesla from '../assets/images/tesla.webp'
 
 export const OverOns = () => {
     return (
-        <section className='overons-section mt-5'>
+        <section className='overons-section'>
             <h3 className='over-ons-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -19,20 +19,25 @@ export const OverOns = () => {
                         />
                 </svg>
                 Over Ons
-            </h3>                
-            <img src={tesla} alt='tesla auto' draggable={false}></img>
-            <div className='overons-text p-2'>
-                <p className='mb-2'>
-                    Wiebes autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
-                    Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
-                    100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 
-                    Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.</p>
-                <button className='center-text slagings-percentage'><a href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'>Bekijk mijn slagingspercentage</a></button>
+            </h3>
+            <div className='over-ons-desktop-layout-top'>
+                <img src={tesla} alt='tesla auto' draggable={false}></img>
+                <div className='overons-text'>
+                    <p className='mb-2'>
+                        Wiebes autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
+                        Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
+                        100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 
+                        Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.</p>
+                </div>
             </div>
-            <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
-            <div className='p-tlr-2'>
-                <p className='overons-text'>Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka die op neste my renewable diesel rijdt of een Tesla die met groene stroom wordt geladen.</p>
+
+            <a href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'><button className='center-text slagings-percentage'>Bekijk mijn slagingspercentage</button></a>
+
+            <div className='over-ons-desktop-layout-bottom'>
+                <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
+                    <p className='overons-text'>Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka die op neste my renewable diesel rijdt of een Tesla die met groene stroom wordt geladen.</p>
             </div>
+            
         </section>
     )
 

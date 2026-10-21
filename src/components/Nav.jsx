@@ -53,7 +53,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <button type="button" onClick={onClose}>
+                        <button type="button" className="hide-btn" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" viewBox="0 0 24 24" 

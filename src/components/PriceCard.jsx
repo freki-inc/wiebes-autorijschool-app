@@ -1,6 +1,9 @@
 export const PriceCard = ({
     badgeText = "Proefles van 60 min",
-    text = "Les van 60 min, persoonlijk plan van aanpak.",
+    text1 = "Les van 60 min.",
+    text2 = "Persoonlijk plan van aanpak.",
+    text3 = "Voor leerlingen zonder ervaring.",
+    text4 = "Nabespreking.",
     price = "€50,-",
     observation = "",
 }) => {
@@ -13,13 +16,21 @@ export const PriceCard = ({
                             {badgeText}
                         </div>
                     </div>
-                    <div className="description-wrapper mb-1">
-                        <span>&#x2705;</span>
+                    <p className="price"> {price}</p>
+                    <div className="description-wrapper mt-05 mb-1">
                         <p className="description">
-                            {text}
+                            <span>&#x2705;</span> {text1}
+                        </p>
+                        <p className="description">
+                            <span>&#x2705;</span> {text2}
+                        </p>
+                        <p className="description">
+                            <span>&#x2705;</span> {text3}
+                        </p>
+                        <p className="description">
+                            <span>&#x2705;</span> {text4}
                         </p>
                     </div>
-                    <p className="price"> {price}</p>
                     <p className="observation">{observation}</p>
                 </div>
             </div>

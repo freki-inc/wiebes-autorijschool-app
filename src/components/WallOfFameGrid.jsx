@@ -159,7 +159,7 @@ export const WallOfFameGrid = () => {
       ]
     
     return (
-        <section className='wall-of-fame-section mt-5'>
+        <section className='wall-of-fame-section'>
             <h3 className='wall-of-fame-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -176,7 +176,7 @@ export const WallOfFameGrid = () => {
                 </svg>
                 Wall of Fame
             </h3>
-            <p className='p-tlr-1'>&#128247; Velen gingen je voor. &#127942;</p>
+            <p>&#128247; Velen gingen je voor. &#127942;</p>
             <p>¡Viva la Rijvolutie siempre!</p>
             <div className='image-grid'>
                 {/* Grid */}
@@ -203,20 +203,21 @@ export const WallOfFameGrid = () => {
                     role="dialog"
                     aria-modal="true"
                     >
-                    <button
+                    {/* <button
                         className="close-btn"
                         onClick={() => setSelectedImage(null)}
                         aria-label="Close"
                     >
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="close-btn-icon"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" /></svg>
-                    </button>
+                    </button> */}
                     
                     <img
                         src={selectedImage.src}
                         alt={selectedImage.alt}
                         className="lightbox-image"
                         draggable={false}
-                        onClick={(e) => e.stopPropagation()} // prevent closing when clicking the image
+                        onClick={() => setSelectedImage(null)}
+                        // onClick={(e) => e.stopPropagation()} // prevent closing when clicking the image
                     />
                     </div>
                 )}

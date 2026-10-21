@@ -14,7 +14,7 @@ export const PriceCardHome = ({
     buttonLink = "/prijslijst"
 }) => {
     return (
-        <section id="price" className="tarieven-section mt-5">
+        <section id="price" className="tarieven-section-home mt-5">
           <h3 className="tarief-titel">
               <svg 
                   xmlns="http://www.w3.org/2000/svg" 

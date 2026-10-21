@@ -2,7 +2,7 @@ import { PriceCard } from "./PriceCard"
 
 export const PriceComplete = () => {
     return (
-        <section className="tarieven-section mt-5 p-b-1">
+        <section className="tarieven-section p-b-1">
             <h3 className="tarief-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -19,49 +19,78 @@ export const PriceComplete = () => {
                 </svg>
                 Tarieven
             </h3>
-            <div>
-                <p className="mb-05">&#128179; Transparante tarieven.</p>
-                <p className="mb-2">&#128664; Een les duurt 90 min.</p>
+            <div className="tarief-text">
+                <p className="mb-05">&#128179; Transparante tarieven, zeer voordelig.</p>
+                <p className="mb-2">&#128664; Kies jouw pakket, begin je opleiding nu!</p>
             </div>
             <div className="price-card-wrapper">
-                <PriceCard />
-                <PriceCard 
-                    badgeText="Basispakket"
-                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor €75 per uur! Inclusief praktijkexamen."
-                    price="€ 890,-"
-                />
-                <PriceCard 
-                    badgeText="Uitbreidingspakket"
-                    text="5 lessen, totaal 7,5 uur rijles (90 min per les). Lessen voor € 75 per uur! Extra voordelig!"
-                    price="€ 560,-"
-                    observation="*Alleen mogelijk na aanschaf basis pakket."
-                />
-                
-                <PriceCard 
-                    badgeText="Herkansingspakket"
-                    text="6 uur rijles (4 Lessen van 1.5 uur) Lessen voor €55,- per uur!! Herexamen praktijk voor €195,-"
-                    price="€ 525,-"
-                />
-                <PriceCard 
-                    badgeText="Losse Les"
-                    text="60 min per les. Prive les. Extra voordelig!"
-                    price="€ 75,-"
-                />
-                <PriceCard 
-                    badgeText="Faalangst Examen"
-                    text="Incl. 50 min inrijden. Meer aandacht met mogelijkheid tot time-out. Vergrote slagingskans."
-                    price="€ 345,-"
-                />
-                <PriceCard 
-                    badgeText="Tussentijdse toets"
-                    text="Incl. 50 min inrijden. Toetsing rijvaardigheid. Evaluatie verbeterpunten. Vergrote slagingskans."
-                    price="€ 305,-"
-                />
-                <PriceCard 
-                    badgeText="Praktijkexamen"
-                    text="Incl. 50 min inrijden. Afrijden bij het CBR. Nabespreking."
-                    price="€ 330,-"
-                />
+                <div className="price-card-top">
+                    <PriceCard 
+                        badgeText="Basispakket"
+                        text1="5 lessen, 90 min per les."
+                        text2="Plan zelf je lessen in de app."
+                        text3="Lessen voor €75 per uur!"
+                        text4="Incl. praktijkexamen."
+                        price="€ 890,-"
+                    />
+                    <PriceCard 
+                        badgeText="Uitbreidingspakket"
+                        text1="5 lessen, 90 min per les."
+                        text2="Plan zelf je lessen in de app."
+                        text3="Lessen voor € 75 per uur!"
+                        text4="Zeer voordelig!"
+                        price="€ 560,-"
+                        observation="*Alleen mogelijk na aanschaf basis pakket."
+                    />
+                    
+                    <PriceCard 
+                        badgeText="Herkansingspakket"
+                        text1="4 Lessen van 90 min."
+                        text2="Lessen voor €55,- per uur!!"
+                        text3="Incl. herexamen praktijk (€195,-)"
+                        text4="Extra voordelig!"
+                        price="€ 525,-"
+                    />
+                </div>
+                <div className="price-card-middle">
+                    <PriceCard />
+                    <PriceCard 
+                        badgeText="Losse Les"
+                        text1="60 min per les."
+                        text2="Prive les, geen afleidingen."
+                        text3="Bepaal zelf hoeveel lessen je wilt."
+                        text4="Vaste instructeur."
+                        price="€ 75,-"
+                    />
+                </div>
+                <div className="price-card-bottom">
+
+                    <PriceCard 
+                        badgeText="Faalangst Examen"
+                        text1="Incl. 50 min inrijden."
+                        text2="Extra aandacht."
+                        text3="Mogelijkheid tot time-out."
+                        text4="Vergrote slagingskans."
+                        price="€ 345,-"
+                    />
+                    <PriceCard 
+                        badgeText="Tussentijdse toets"
+                        text1="Incl. 50 min inrijden."
+                        text2="Toetsing rijvaardigheid."
+                        text3="Evaluatie verbeterpunten."
+                        text4="Verbetert je slagingskans."
+                        price="€ 305,-"
+                    />
+                    <PriceCard 
+                        badgeText="Praktijkexamen"
+                        text1="Incl. 50 min inrijden."
+                        text2="Wij regelen de aanvraag."
+                        text3="Afrijden bij het CBR."
+                        text4="Nabespreking."
+                        price="€ 330,-"
+                    />
+                </div>
+
             </div>
             
         </section>    
