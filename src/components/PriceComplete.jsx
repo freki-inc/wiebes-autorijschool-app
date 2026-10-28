@@ -3,14 +3,14 @@ import { PriceCard } from "./PriceCard"
 export const PriceComplete = () => {
     return (
         <section className="tarieven-section p-b-1">
-            <h3 className="tarief-titel">
+            <h2 className="tarief-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5" 
                     stroke="currentColor" 
-                    className="icon">
+                    className="icon mr-05">
                         <path 
                             strokeLinecap="round"
                             strokeLinejoin="round" 
@@ -18,10 +18,10 @@ export const PriceComplete = () => {
                         />
                 </svg>
                 Tarieven
-            </h3>
+            </h2>
             <div className="tarief-text">
-                <p className="mb-05">&#128179; Transparante tarieven, zeer voordelig.</p>
-                <p className="mb-2">&#128664; Kies jouw pakket, begin je opleiding nu!</p>
+                <p className="mb-05"><span aria-hidden="true">&#128179; </span>Transparante tarieven, zeer voordelig.</p>
+                <p className="mb-2"><span aria-hidden="true">&#128664; </span>Kies jouw pakket, begin je opleiding nu!</p>
             </div>
             <div className="price-card-wrapper">
                 <div className="price-card-top">

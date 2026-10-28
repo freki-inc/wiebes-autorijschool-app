@@ -3,7 +3,7 @@ import milieu from '../assets/images/milieu.webp';
 export const Milieu = () => {
     return (
         <section className='milieu-section'>
-            <h3 className='milieu-titel'>
+            <h2 className='milieu-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -18,7 +18,7 @@ export const Milieu = () => {
                         />
                 </svg>
                 Milieu
-            </h3>
+            </h2>
                 <img className='milieu-img mb-1' src={milieu} alt="tesla rijd door bos" />
                 <div className='milieu-text'>
                     <p className='mb-1'>Bij Rijvolutie zetten wij ons in voor een groene toekomst. Daarom hebben wij het roer helemaal omgegooid. Geen compromissen meer nodig. Onze handgeschakelde diesel rijdt op renewable brandstof.</p>

@@ -4,14 +4,14 @@ import tesla from '../assets/images/tesla.webp'
 export const OverOns = () => {
     return (
         <section className='overons-section'>
-            <h3 className='over-ons-titel'>
+            <h2 className='over-ons-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5" 
                     stroke="currentColor" 
-                    className="icon">
+                    className="icon mr-05">
                         <path 
                             strokeLinecap="round"
                             strokeLinejoin="round" 
@@ -19,7 +19,7 @@ export const OverOns = () => {
                         />
                 </svg>
                 Over Ons
-            </h3>
+            </h2>
             <div className='over-ons-desktop-layout-top'>
                 <img src={tesla} alt='tesla auto' draggable={false}></img>
                 <div className='overons-text'>

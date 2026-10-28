@@ -3,14 +3,14 @@ export const GoogleMapEmbed = () => {
 
       return (
         <section className="location-map-section mt-5">
-          <h3 className='location-map-title'>
+          <h2 className='location-map-titel'>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
               viewBox="0 0 24 24" 
               strokeWidth="1.5" 
               stroke="currentColor" 
-              className="icon">
+              className="icon mr-05">
                 <path 
                   strokeLinecap="round" 
                   strokeLinejoin="round"
@@ -23,7 +23,7 @@ export const GoogleMapEmbed = () => {
                 />
             </svg>
             Start Locatie
-          </h3>
+          </h2>
           <div className="location-map-border">
             <iframe
               title="Location map"

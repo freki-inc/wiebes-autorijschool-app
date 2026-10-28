@@ -160,7 +160,7 @@ export const WallOfFameGrid = () => {
     
     return (
         <section className='wall-of-fame-section'>
-            <h3 className='wall-of-fame-titel'>
+            <h2 className='wall-of-fame-titel'>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -175,9 +175,9 @@ export const WallOfFameGrid = () => {
                         />
                 </svg>
                 Wall of Fame
-            </h3>
-            <p>&#128247; Velen gingen je voor. &#127942;</p>
-            <p>¡Viva la Rijvolutie siempre!</p>
+            </h2>
+            <p><span aria-hidden="true">&#128247; </span>Velen gingen je voor.<span aria-hidden="true"> &#127942;</span></p>
+            <p lang="es">¡Viva la Rijvolutie siempre!</p>
             <div className='image-grid'>
                 {/* Grid */}
                 {[...images].reverse().map((img) => (

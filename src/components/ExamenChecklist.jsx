@@ -3,7 +3,7 @@ import rijles from '../assets/images/rijles.webp';
 export const ExamenChecklist = () => {
     return (
         <section className="examenchecklist-section p-b-1">
-            <h3 className="examenchecklist-titel">
+            <h2 className="examenchecklist-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -18,27 +18,27 @@ export const ExamenChecklist = () => {
                         />
                 </svg>
                 Examen Checklist
-            </h3>
+            </h2>
             <img className='examen-img' src={rijles} alt="rijles" />
             <div className='wd-100 display-flex-row'>
-                <h4 className="mb-05">&#128161; Belangrijk! &#128064;</h4>
+                <h3 className="mt-05 mb-05"><span aria-hidden="true">&#128161; </span>Belangrijk! <span aria-hidden="true">&#128064;</span></h3>
             </div>
             <p className="mb-1">Voordat jouw examen aangevraagd kan worden bij het cbr, moet jij de volgende zaken regelen door op de onderstaande links te clicken:</p>
             <div className='cbr-link-border mb-1'>
                 <div className='cbr-link-div'>
                     <div className='cbr-link-theorie mb-1'>
-                        <p className='mr-05'><span className='cbr-link-emoji '>&#x2705; </span>Haal je theorie:</p>
+                        <p className='mr-05'><span className='cbr-link-emoji' aria-hidden="true">&#x2705; </span>Haal je theorie:</p>
                         <ul>
                             <li><a className='cbr-link' href='https://www.itheorie.nl/' target='_blank'>Theorie Cursus itheorie.nl</a></li>
-                            <li className='li-theorie-note'><span className='cbr-link-emoji '>&#x1F446; </span>Koop bij mij je theorie cursus en krijg 50% korting! Vraag het nu aan.</li>
+                            <li className='li-theorie-note'><span className='cbr-link-emoji' aria-hidden="true">&#x1F446; </span>Koop bij mij je theorie cursus en krijg 50% korting! Vraag het nu aan.</li>
                             <li><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Freserveren' target='_blank'>Theorie examen boeken bij CBR</a></li>
                         </ul>
                     </div>
                     <div className='display-flex-row mb-1'>
-                        <p className='cbr-link-emoji mr-05'>&#x2705;</p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fgezondheidsverklaring' target='_blank'>Vul in je gezondheidsverklaring</a>    
+                        <p className='cbr-link-emoji mr-05' aria-hidden="true">&#x2705;</p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fgezondheidsverklaring' target='_blank'>Vul in je gezondheidsverklaring</a>    
                     </div>
                     <div className='display-flex-row mb-1'>
-                        <p className='cbr-link-emoji mr-05'>&#x2705;</p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fopleider-machtigen' target='_blank'>Machtig de rijschool (rijschoolnummer: 4724Z1)</a>
+                        <p className='cbr-link-emoji mr-05' aria-hidden="true">&#x2705;</p><a className='cbr-link' href='https://www.cbr.nl/nl/mijncbr/inloggen-op-mijn-cbr?orgurl=https%3A%2F%2Fwww.cbr.nl%2Fnl%2Fmijncbr%3Forgurl%3Dhttps%253A%252F%252Fwww.cbr.nl%252Fnl%252Fmijncbr%252Fopleider-machtigen' target='_blank'>Machtig de rijschool (rijschoolnummer: 4724Z1)</a>
                     </div>
                 </div>
             </div>

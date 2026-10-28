@@ -19,16 +19,16 @@ export const PriceCard = ({
                     <p className="price"> {price}</p>
                     <div className="description-wrapper mt-05 mb-1">
                         <p className="description">
-                            <span>&#x2705;</span> {text1}
+                            <span aria-hidden="true">&#x2705;</span> {text1}
                         </p>
                         <p className="description">
-                            <span>&#x2705;</span> {text2}
+                            <span aria-hidden="true">&#x2705;</span> {text2}
                         </p>
                         <p className="description">
-                            <span>&#x2705;</span> {text3}
+                            <span aria-hidden="true">&#x2705;</span> {text3}
                         </p>
                         <p className="description">
-                            <span>&#x2705;</span> {text4}
+                            <span aria-hidden="true">&#x2705;</span> {text4}
                         </p>
                     </div>
                     <p className="observation">{observation}</p>

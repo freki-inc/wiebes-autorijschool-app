@@ -5,14 +5,14 @@ export const Contact = () => {
 
     return (
         <section className="contact-section">
-            <h3 className="contact-titel">
+            <h2 className="contact-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5"
                     stroke="currentColor" 
-                    className="icon">
+                    className="icon mr-05">
                         <path 
                             strokeLinecap="round" 
                             strokeLinejoin="round" 
@@ -20,7 +20,7 @@ export const Contact = () => {
                         />
                 </svg>
                 Contact
-            </h3>
+            </h2>
             <div className='contact-desktop-content'>
                 <img className='contact-img' src={contactImg} alt="rijinstructeur"></img>
                 <div id='contact' className="contact-wrapper">
@@ -28,11 +28,11 @@ export const Contact = () => {
                         <p className="mt-2">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 60 min.</p>
                     </div>
                     <div className='whatsapp-wrapper mt-2'>
-                        <span className="hand-point-right emoticons hero-slogan-2-emoji mr-02">&#128073;</span>
+                        <span className="hand-point-right emoticons hero-slogan-2-emoji mr-02" aria-hidden="true">&#128073;</span>
                         <div className="whatsapp-contact-div">
                             <WhatsAppButton />
                         </div>
-                        <span className="hand-point-left emoticons hero-slogan-2-emoji ml-02">&#128072;</span>
+                        <span className="hand-point-left emoticons hero-slogan-2-emoji ml-02" aria-hidden="true">&#128072;</span>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo.webp";
 
-const STORAGE_KEY = 'privacyAndTermsAccepted6'; // if terms are updated, change this key
+const STORAGE_KEY = 'privacyAndTermsAccepted7'; // if terms are updated, change this key
 
 export const PrivacyPopup = () => {
     const [visible, setVisible] = useState(false);
@@ -30,7 +30,8 @@ export const PrivacyPopup = () => {
                     <img
                         src={logo} 
                         alt="Wiebe’s Autorijschool"
-                        width="180rem"
+                        width="126px"
+                        height="56px"
                         draggable={false}
                         className="logo mb-1">
                     </img>
