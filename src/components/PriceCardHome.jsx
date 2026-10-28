@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const PriceCardHome = ({
     badgeText = "Begin nu je opleiding!",
@@ -56,15 +56,13 @@ export const PriceCardHome = ({
                               </div> */}
 
                               <div className="display-flex-column ht-100 mb-2">
-                                  <NavLink 
+                                  <Link 
                                     to={buttonLink} 
-                                    draggable={false}>
-                                    <button 
-                                      className="on-top prevent-select secondary-button" 
-                                      draggable={false}>
+                                    className="on-top prevent-select secondary-button"
+                                    draggable={false}
+                                  >
                                       {buttonText}
-                                    </button>
-                                  </NavLink>
+                                  </Link>
                               </div>
                           </div>
                       </div>

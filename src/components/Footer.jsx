@@ -5,14 +5,16 @@ export const Footer = () => {
         <footer>
             <div className="footer-top mb-05">
                 <div className="footer-left">
-                    <p><strong className="footer-highlight">Rijinstructeur:</strong> Wiebe Spierenburg</p>
-                    <p><strong className="footer-highlight">Tel:</strong> +31 6 19617569</p>
-                    <p><strong className="footer-highlight">KVK nummer:</strong> 63176734</p>
+                    <strong className="footer-highlight">Rijinstructeur:</strong>
+                    <p> Wiebe Spierenburg</p>
+                    <strong className="footer-highlight">KVK nummer:</strong>
+                    <p> 63176734</p>
                 </div>
                 <div className="footer-right">
                     <p className="footer-highlight"><strong>Bereikbaarheid:</strong></p>
                     <p>Maandag t/m Vrijdag</p>
                     <p>08:00 - 17:00</p>
+                    <p><strong className="footer-highlight">Tel:</strong> +31 6 19617569</p>
                 </div>
             </div>
             <div className="footer-bottom">
