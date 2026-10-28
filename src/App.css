@@ -101,7 +101,6 @@
     /* Text */
     --body-text: var(--text-color);
     --headings: var(--text-color);
-    --section-headers: #3A7A2A;
     --btn-text-color: var(--text-color);
     --form-labels: var(--text-color);
     --footer-text: var(--light-color);
@@ -356,11 +355,21 @@
     align-items: center;
   }
 
+  .hero-title {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--hero-light-text);
+    margin-bottom: 1rem;
+  }
+
   .hero-slogan {
     width: 100%;
     text-align: center;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     color: var(--hero-light-text);
   }
@@ -412,40 +421,9 @@
     100% { transform: translateY(0); }
   }
 
-  /* .hero-down-position {
-    position: absolute;
-    bottom: 0;
+  @media (prefers-reduced-motion: reduce) {
+    .hand-bounce { animation: none; }
   }
-
-  .hero-move-down {
-    animation: 0.9s linear 5s infinite bounceDown;
-    width: 3rem;
-    height: 3rem;
-    color: var(--light-color);
-  }
-
-  .hero-move-down:hover {
-    animation: none;
-  }
-
-  @keyframes bounceDown {
-    0%   { transform: translateY(0); }
-    5%  { transform: translateY(2px); }
-    10%  { transform: translateY(4px); }
-    15%  { transform: translateY(6px); }
-    20%  { transform: translateY(8px); }
-    25%  { transform: translateY(10px); }
-    30%  { transform: translateY(8px); }
-    35%  { transform: translateY(6px); }
-    40%  { transform: translateY(4px); }
-    45%  { transform: translateY(2px); }
-    50% { transform: translateY(0); }
-    60% { transform: translateY(0); }
-    70% { transform: translateY(0); }
-    80% { transform: translateY(0); }
-    90% { transform: translateY(0); }
-    100% { transform: translateY(0); }
-  } */
 
   /** Prijslijst Section **/
 
@@ -1116,10 +1094,6 @@
 @layer typographystyles {
   /* === Typography Styles === */
 
-  h1 {
-    color: var(--section-headers);
-    font-size: 2rem;
-  }
 
   h2 {
     color: var(--section-headers);
@@ -1226,12 +1200,14 @@
   }
 
   .logo {
-    height: 3.8rem;
+    width: 126px;
+    height: 56px;
     border-radius: 0.5rem;
   }
 
   .logo-menu {
-    height: 8rem;
+    width: 126px;
+    height: 56px;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
   }
@@ -1351,7 +1327,7 @@
   .cta-button {
     width: 16rem;
     display: inline-block;
-    padding: 0.7rem;
+    /* padding: 0.7rem; */
     margin: 1rem 1rem 0;
     font-family: var(--btn-font);
     font-size: 1.8rem;

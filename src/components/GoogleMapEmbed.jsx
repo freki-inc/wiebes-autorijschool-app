@@ -1,6 +1,5 @@
 export const GoogleMapEmbed = () => {
-  const address = "place_id:ChIJ_d37HdrHxUcRSpIJxxTRy8E"; // location
-  const encodedAddress = encodeURIComponent(address);
+  const address = "ChIJ_d37HdrHxUcRSpIJxxTRy8E"; // location
 
       return (
         <section className="location-map-section mt-5">
@@ -34,7 +33,7 @@ export const GoogleMapEmbed = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
-              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=${encodedAddress}`}
+              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=place_id:${address}`}
             />
           </div>
 

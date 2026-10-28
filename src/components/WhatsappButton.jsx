@@ -1,4 +1,4 @@
-export const WhatsAppButton = ({ phoneNumber = "+31 6 19617569", message = "Hoi Wiebe, ik wil graag een proefles boeken.", disabled = false }) => {
+export const WhatsAppButton = ({ phoneNumber = "+31 6 19617569", message = "Hoi Wiebe, ik wil graag een proefles boeken."}) => {
   // Clean the number (remove everything except digits)
   const cleanNumber = phoneNumber.replace(/\D/g, '');
 

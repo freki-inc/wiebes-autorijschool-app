@@ -12,10 +12,14 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 <Link to="/" draggable={false}>
                     <img
                         src={logo} 
-                        alt="Wiebe’s Autorijschool"
-                        height="4rem"
+                        alt="Rijvolutie Autorijschool"
+                        width="126px"
+                        height="56px"
                         draggable={false}
-                        className="logo">
+                        className="logo"
+                        aria-label="Rijvolutie samen op weg"
+                    >
+                            
                     </img>
                 </Link>
 
@@ -44,10 +48,12 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                         <Link to="/" onClick={onClose}>
                             <img
                                 src={logo} 
-                                alt="Wiebe’s Autorijschool"
-                                height="8rem"
+                                alt="Rijvolutie Autorijschool"
+                                width="126px"
+                                height="56px"
                                 draggable={false}
                                 className="logo-menu"
+                                aria-label="Rijvolutie samen op weg"
                             />
                         </Link>
                     </li>
