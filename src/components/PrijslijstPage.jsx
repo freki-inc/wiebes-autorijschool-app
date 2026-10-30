@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Nav } from './Nav'
-import { PriceComplete } from './PriceComplete'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { PriceComplete } from "./PriceComplete";
+import { Footer } from "./Footer";
 
 export const PrijslijstPage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);

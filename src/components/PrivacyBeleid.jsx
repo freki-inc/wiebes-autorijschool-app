@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
-import { NavBeleid } from './NavBeleid'
-import { Footer } from './Footer'
+import { NavBeleid } from "./NavBeleid";
+import { Footer } from "./Footer";
 
 export const PrivacyBeleid = () => {
 
@@ -9,7 +9,7 @@ export const PrivacyBeleid = () => {
         <main>
             <NavBeleid />
             <section className='privacy-policy'>
-                <h1 className='center-text mb-1'>Privacybeleid Autorijschool Rijvolutie</h1>
+                <h1 className='center-text mb-1'>Privacybeleid Rijvolutie</h1>
                 <p className='mb-05'>Laatst bijgewerkt: 11 augustus 2026</p>
                 <p className='mb-1'>Deze website wordt beheerd door [naam bedrijf / eenmanszaak], gevestigd te [plaats], ingeschreven bij de KvK onder nummer [KvK-nummer] ("wij", "ons"). Wij hechten waarde aan de privacy van bezoekers van onze website en zijn transparant over welke gegevens er worden verwerkt.</p>
                 <h2 className='mb-1'>1. Contactgegevens</h2>

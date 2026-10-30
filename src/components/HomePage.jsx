@@ -1,12 +1,12 @@
-import { Nav } from './Nav'
-import { Hero } from './Hero'
-import { PriceCardHome } from './PriceCardHome'
-import { OverOns } from './OverOns'
-import { GoogleMapEmbed } from './GoogleMapEmbed'
-import { Contact } from './Contact'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { Hero } from "./Hero";
+import { PriceCardHome } from "./PriceCardHome";
+import { OverOns } from "./OverOns";
+import { GoogleMapEmbed } from "./GoogleMapEmbed";
+import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 
-import '../App.css'
+import "../App.css";
 
 export const HomePage = () => {
 

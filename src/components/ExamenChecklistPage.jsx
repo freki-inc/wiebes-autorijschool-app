@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Nav } from './Nav'
-import { ExamenChecklist } from './ExamenChecklist'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { ExamenChecklist } from "./ExamenChecklist";
+import { Footer } from "./Footer";
 
 export const ExamenChecklistPage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);

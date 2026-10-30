@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Nav } from './Nav'
-import { WallOfFameGrid } from './WallOfFameGrid'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { WallOfFameGrid } from "./WallOfFameGrid";
+import { Footer } from "./Footer";
 
 export const WallOfFamePage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);

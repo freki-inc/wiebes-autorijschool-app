@@ -11,11 +11,13 @@ export const NavBeleid = () => {
                     <Link to="/" draggable={false}>
                         <img
                             src={logo} 
-                            alt="Wiebe’s Autorijschool"
-                            width="180rem"
+                            alt="Rijvolutie"
+                            width="126px"
+                            height="56px"
                             draggable={false}
-                            className="logo">
-                        </img>
+                            className="logo"
+                            aria-label="Rijvolutie samen op weg"
+                        />
                     </Link>
                 </div>
             </nav>

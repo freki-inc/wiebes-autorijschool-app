@@ -3,7 +3,7 @@ export const GoogleMapEmbed = () => {
 
       return (
         <section className="location-map-section mt-5">
-          <h2 className='location-map-titel'>
+          <h2 className="location-map-titel">
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               fill="none" 
@@ -27,8 +27,8 @@ export const GoogleMapEmbed = () => {
           <div className="location-map-border">
             <iframe
               title="Location map"
-              width="320px"
-              height="350px"
+              width={320}
+              height={350}
               className="location-map"
               loading="lazy"
               allowFullScreen
@@ -36,7 +36,6 @@ export const GoogleMapEmbed = () => {
               src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=place_id:${address}`}
             />
           </div>
-
         </section>
       );
 }

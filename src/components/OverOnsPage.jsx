@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Nav } from './Nav'
-import { OverOns } from './OverOns'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { OverOns } from "./OverOns";
+import { Footer } from "./Footer";
 
 export const OverOnsPage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);

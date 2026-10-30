@@ -1,5 +1,5 @@
-import { WhatsAppButton } from './WhatsappButton';
-import contactImg from '../assets/images/contact.webp';
+import { WhatsAppButton } from "./WhatsappButton";
+import contactImg from "../assets/images/contact.webp";
 
 export const Contact = () => {
 
@@ -21,13 +21,13 @@ export const Contact = () => {
                 </svg>
                 Contact
             </h2>
-            <div className='contact-desktop-content'>
-                <img className='contact-img' src={contactImg} alt="rijinstructeur"></img>
-                <div id='contact' className="contact-wrapper">
+            <div className="contact-desktop-content">
+                <img className="contact-img" width={500} height={375} src={contactImg} alt="rijinstructeur"></img>
+                <div id="contact" className="contact-wrapper">
                     <div className="contact-text">
                         <p className="mt-2">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 60 min.</p>
                     </div>
-                    <div className='whatsapp-wrapper mt-2'>
+                    <div className="whatsapp-wrapper mt-2">
                         <span className="hand-point-right emoticons hero-slogan-2-emoji mr-02" aria-hidden="true">&#128073;</span>
                         <div className="whatsapp-contact-div">
                             <WhatsAppButton />
@@ -36,9 +36,7 @@ export const Contact = () => {
                     </div>
                 </div>
             </div>
-
         </section>
-
     )
 }
 

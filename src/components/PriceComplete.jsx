@@ -1,8 +1,8 @@
-import { PriceCard } from "./PriceCard"
+import { PriceCard } from "./PriceCard";
 
 export const PriceComplete = () => {
     return (
-        <section className="tarieven-section p-b-1">
+        <section className="tarieven-section">
             <h2 className="tarief-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -64,7 +64,6 @@ export const PriceComplete = () => {
                     />
                 </div>
                 <div className="price-card-bottom">
-
                     <PriceCard 
                         badgeText="Faalangst Examen"
                         text1="Incl. 50 min inrijden."
@@ -90,9 +89,7 @@ export const PriceComplete = () => {
                         price="€ 330,-"
                     />
                 </div>
-
             </div>
-            
         </section>    
     )
 }

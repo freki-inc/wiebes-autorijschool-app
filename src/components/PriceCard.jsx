@@ -8,7 +8,7 @@ export const PriceCard = ({
     observation = "",
 }) => {
     return (
-        <div id="price" className="card-container mb-2">
+        <div id="price" className="card-container">
             <div className="price-card">
                 <div className="content-top">
                     <div className="card-title">

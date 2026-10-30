@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { useState } from 'react';
+import { useState } from "react";
 
 import logo from "../assets/images/logo.webp";
 
@@ -7,12 +7,11 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
     return (
         <header>
             <nav>
-
                 {/* Navigation logo */}
                 <Link to="/" draggable={false}>
                     <img
                         src={logo} 
-                        alt="Rijvolutie Autorijschool"
+                        alt="Rijvolutie"
                         width="126px"
                         height="56px"
                         draggable={false}
@@ -42,13 +41,13 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 </button>
 
                 {/* Hamburger menu */}
-                <ul id="site-links" className={`site-links ${isOpen ? 'open' : ''}`}>
+                <ul id="nav-links" className={`nav-links ${isOpen ? "open" : ""}`}>
 
                     <li>
                         <Link to="/" onClick={onClose}>
                             <img
                                 src={logo} 
-                                alt="Rijvolutie Autorijschool"
+                                alt="Rijvolutie"
                                 width="126px"
                                 height="56px"
                                 draggable={false}
@@ -209,7 +208,6 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                             Contact
                         </NavLink>
                     </li>
-
                 </ul>
             </nav>
         </header>

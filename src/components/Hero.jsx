@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import heroImg from "../assets/images/hero-img.webp"
+import heroImg from "../assets/images/hero-img.webp";
 
 export const Hero = () => {
     return (
@@ -11,14 +11,14 @@ export const Hero = () => {
                     height={296}
                     fetchPriority="high" 
                     className="hero-img" 
-                    alt="Rijinstructeur Wiebe geeft een duimpje omhoog vanuit de raam van de Tesla lesauto." 
+                    alt="Rijinstructeur Wiebe geeft een duimpje omhoog vanuit het raam van de Tesla lesauto." 
                     draggable={false}
                 />
             </div>
 
             <div className="hero-content">
                 <h1 id="hero-title" className="hero-title">
-                    Rijschool Rijvolutie
+                    Rijvolutie
                 </h1>
                 <p className="hero-slogan">
                 <span className="emoticons" aria-hidden="true">

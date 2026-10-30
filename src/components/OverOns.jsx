@@ -1,10 +1,10 @@
-import opelMokka from '../assets/images/Opel-Mokka.webp'
-import tesla from '../assets/images/tesla.webp'
+import opelMokka from "../assets/images/Opel-Mokka.webp";
+import tesla from "../assets/images/tesla.webp";
 
 export const OverOns = () => {
     return (
-        <section className='overons-section'>
-            <h2 className='over-ons-titel'>
+        <section className="overons-section">
+            <h2 className="over-ons-titel">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 
@@ -20,27 +20,25 @@ export const OverOns = () => {
                 </svg>
                 Over Ons
             </h2>
-            <div className='over-ons-desktop-layout-top'>
-                <img src={tesla} alt='tesla auto' draggable={false}></img>
-                <div className='overons-text'>
-                    <p className='mb-2'>
-                        Wiebes autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
+            <div className="over-ons-desktop-layout-top">
+                <img width={500} height={276} src={tesla} alt="tesla auto" draggable={false}></img>
+                <div className="overons-text">
+                    <p className="mb-2">
+                        Wiebe's autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
                         Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
                         100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 
                         Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.</p>
                 </div>
             </div>
 
-            <a href='https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool' target='_blank'><button className='center-text slagings-percentage'>Bekijk mijn slagingspercentage</button></a>
+            <a href="https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool" target="_blank"><button className="center-text slagings-percentage">Bekijk mijn slagingspercentage</button></a>
 
-            <div className='over-ons-desktop-layout-bottom'>
-                <img src={opelMokka} alt='opel mokka auto' draggable={false}></img>
-                    <p className='overons-text'>Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka die op neste my renewable diesel rijdt of een Tesla die met groene stroom wordt geladen.</p>
+            <div className="over-ons-desktop-layout-bottom">
+                <img width={500} height={282} src={opelMokka} alt="opel mokka auto" draggable={false}></img>
+                    <p className="overons-text">Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka die op neste my renewable diesel rijdt of een Tesla die met groene stroom wordt geladen.</p>
             </div>
-            
         </section>
     )
-
 }
 
 {/* Created by willemwebdev.com */}

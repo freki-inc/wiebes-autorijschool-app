@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-import { Nav } from './Nav'
-import { Milieu } from './Milieu'
-import { Footer } from './Footer'
+import { Nav } from "./Nav";
+import { Milieu } from "./Milieu";
+import { Footer } from "./Footer";
 
 export const MilieuPage = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
