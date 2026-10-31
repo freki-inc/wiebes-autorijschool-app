@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import logo from "../assets/images/logo.webp";
 
-const STORAGE_KEY = "privacyAndTermsAccepted7"; // if terms are updated, change this key
+const STORAGE_KEY = "privacyAndTermsAccepted8"; // if terms are updated, change this key
 
 export const PrivacyPopup = () => {
     const [visible, setVisible] = useState(false);
@@ -40,12 +40,11 @@ export const PrivacyPopup = () => {
                         Wij gebruiken cookies om onze website en onze service te optimaliseren.
                         Om deze site te gebruiken, klik op accepteren.
                     </p>
-                    <div className="popup-actions mb-1-5">
+                    <div className="popup-actions mb-05">
                         <button className="secondary-button" onClick={handleAccept}>Accepteren</button>
                     </div>
-                    <div className="popup-link-div">
-                        <Link to="/cookiebeleid"><span className="privacy-policy-link mr-1">Cookiebeleid</span></Link>
-                        <Link to="/privacybeleid"><span className="privacy-policy-link">Privacybeleid</span></Link>
+                    <div className="popup-link-div p-05">
+                        <Link to="/privacybeleid" className="p-05"><span className="privacy-policy-link">Privacybeleid</span></Link>
                     </div>
                 </div>
             </div>

@@ -246,7 +246,7 @@
     align-items: center;
     justify-content: center;
     background: var(--privacy-modal-background);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 16px;
     text-align: center;
   }
@@ -260,6 +260,7 @@
   .popup-link-div {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -1146,6 +1147,7 @@
   .mr-02 { margin-right: 0.2rem; }
   .mb-m5 { margin-bottom: -7rem;}
   .mt-m12 { margin-top: -15rem;}
+  .p-05 { padding: 0.5rem; }
   .p-1  { padding: 1rem; }
   .p-2  { padding: 2rem; }
   .p-b-1 { padding-bottom: 1rem; }

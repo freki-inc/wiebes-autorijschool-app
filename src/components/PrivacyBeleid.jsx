@@ -11,11 +11,12 @@ export const PrivacyBeleid = () => {
             <section className='privacy-policy'>
                 <h1 className='center-text mb-1'>Privacybeleid Rijvolutie</h1>
                 <p className='mb-05'>Laatst bijgewerkt: 11 augustus 2026</p>
-                <p className='mb-1'>Deze website wordt beheerd door [naam bedrijf / eenmanszaak], gevestigd te [plaats], ingeschreven bij de KvK onder nummer [KvK-nummer] ("wij", "ons"). Wij hechten waarde aan de privacy van bezoekers van onze website en zijn transparant over welke gegevens er worden verwerkt.</p>
+                <p className='mb-1'>Deze website wordt beheerd door Rijvolutie, gevestigd te Noordwijkerhout, ingeschreven bij de KvK onder nummer 63176734 ("wij", "ons"). Wij hechten waarde aan de privacy van bezoekers van onze website en zijn transparant over welke gegevens er worden verwerkt.</p>
                 <h2 className='mb-1'>1. Contactgegevens</h2>
-                <p className='mb-1'>[Naam bedrijf] [Adres] [E-mailadres] [Telefoonnummer, optioneel]</p>
+                <p>Naam: Rijvolutie</p>
+                <p className='mb-1'>E-mail: <a className='privacy-policy-link' href="mailto:w.f.spierenburg@gmail.com">w.f.spierenburg@gmail.com</a></p>
                 
-                <h2 className='mb-1'>2. Geen formulieren, geen actief verzamelde gegevens</h2>
+                <h2 className='mb-1'>2. Uw gegevens</h2>
                 <p className='mb-1'>Deze website bevat geen contactformulieren, nieuwsbrieven of andere functies waarmee u actief persoonsgegevens (zoals naam, e-mailadres of telefoonnummer) aan ons verstrekt. Wij verzamelen dus geen gegevens die u zelf invult.</p>
                 <h2 className='mb-1'>3. Serverlogs (hosting)</h2>
                 <p className='mb-1'>Zoals vrijwel elke website registreert onze hostingprovider automatisch bepaalde technische gegevens wanneer u de website bezoekt, waaronder uw IP-adres, browsertype en tijdstip van bezoek. Deze gegevens worden alleen gebruikt om de website technisch te laten functioneren en te beveiligen (bijvoorbeeld tegen misbruik), en worden niet gebruikt voor profilering of marketing.</p>
@@ -56,7 +57,7 @@ export const PrivacyBeleid = () => {
                     <li className='mb-05'>- bezwaar te maken tegen verwerking op basis van gerechtvaardigd belang;</li>
                     <li className='mb-05'>- een klacht in te dienen bij de Autoriteit Persoonsgegevens (<a className='privacy-policy-link' href='https://www.autoriteitpersoonsgegevens.nl/' target='_blank'>autoriteitpersoonsgegevens.nl</a>).</li>
                 </ul>
-                <p className='mb-1'>Voor vragen over deze verklaring of uw gegevens kunt u contact opnemen via <NavLink to="/contact"><span className='algemene-voorwaarden-link'>https://www.wiebes-rijschool.nl/contact</span></NavLink></p>
+                <p className='mb-1'>Voor vragen over deze verklaring of uw gegevens kunt u contact opnemen via de e-mail boven in contactgegevens of <NavLink to="/contact"><span className='algemene-voorwaarden-link'>https://www.rijvolutie.nl/contact</span></NavLink></p>
                 <h2 className='mb-1'>8. Wijzigingen</h2>
                 <p>Wij kunnen deze privacyverklaring van tijd tot tijd aanpassen, bijvoorbeeld bij wijzigingen in de website of wetgeving. De meest actuele versie is altijd op deze pagina te vinden.</p>
             </section>
