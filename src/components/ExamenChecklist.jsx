@@ -19,12 +19,12 @@ export const ExamenChecklist = () => {
                 </svg>
                 Examen Checklist
             </h2>
-            <img className="examen-img" width={500} height={375} src={rijles} alt="rijles" />
+            <img className="examen-img" width={500} height={375} src={rijles} alt="leerling in auto tijdens rijles" />
             <div className="examen-content">
                 <div className="wd-100 display-flex-row">
                     <h3 className="mt-2 mb-05"><span aria-hidden="true">&#128161; </span>Belangrijk! <span aria-hidden="true">&#128064;</span></h3>
                 </div>
-                <p className="mb-2">Voordat jouw examen aangevraagd kan worden bij het cbr, moet jij de volgende zaken regelen door op de onderstaande links te clicken:</p>
+                <p className="mb-2">Voordat jouw examen aangevraagd kan worden bij het CBR, moet jij de volgende zaken regelen door op de onderstaande links te clicken:</p>
                 <div className="cbr-link-border mb-2">
                     <div className="cbr-link-div">
                         <div className="cbr-link-theorie mb-1">

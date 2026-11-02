@@ -27,7 +27,8 @@ export const OverOns = () => {
                         Wiebe's autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
                         Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
                         100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 
-                        Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.</p>
+                        Centraal opstappunt, vlakbij CS Leiden. Makkelijk bereikbaar.
+                    </p>
                 </div>
             </div>
 
@@ -35,7 +36,11 @@ export const OverOns = () => {
 
             <div className="over-ons-desktop-layout-bottom">
                 <img width={500} height={282} src={opelMokka} alt="opel mokka auto" draggable={false}></img>
-                    <p className="overons-text">Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka die op neste my renewable diesel rijdt of een Tesla die met groene stroom wordt geladen.</p>
+                    <p className="overons-text">
+                        Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka
+                         die op HVO100 hernieuwbare diesel rijdt
+                          of een Tesla die met groene stroom wordt geladen.
+                    </p>
             </div>
         </section>
     )
