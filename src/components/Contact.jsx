@@ -12,7 +12,9 @@ export const Contact = () => {
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5"
                     stroke="currentColor" 
-                    className="icon mr-05">
+                    className="icon mr-05"
+                    aria-hidden="true"
+                >
                         <path 
                             strokeLinecap="round" 
                             strokeLinejoin="round" 
@@ -22,7 +24,7 @@ export const Contact = () => {
                 Contact
             </h2>
             <div className="contact-desktop-content">
-                <img className="contact-img" width={500} height={375} src={contactImg} alt="rijinstructeur"></img>
+                <img className="contact-img" width={500} height={375} src={contactImg} alt="rijinstructeur" />
                 <div id="contact" className="contact-wrapper">
                     <div className="contact-text">
                         <p className="mt-2">Neem vrijblijvend contact op om kennis te maken en een proefles in te plannen. Deze kost maar 50 euro en duurt 60 min.</p>

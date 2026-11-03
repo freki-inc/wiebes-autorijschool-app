@@ -11,19 +11,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 <Link to="/" draggable={false}>
                     <img
                         src={logo} 
-                        alt="Rijvolutie"
-                        width="126px"
-                        height="56px"
+                        alt="Rijvolutie samen op weg"
+                        width={126}
+                        height={56}
                         draggable={false}
                         className="logo"
-                        aria-label="Rijvolutie samen op weg"
-                    >
-                            
-                    </img>
+                    />
                 </Link>
 
                 {/* Hamburger menu icon */}
-                <button type="button" className="nav-open-button" aria-label="Menu" onClick={onOpen}>
+                <button type="button" className="nav-open-button" aria-label="Menu" aria-expanded={isOpen} aria-controls="nav-links" onClick={onOpen}>
                     {/* &#128678; */}
                     <svg 
                         xmlns="http://www.w3.org/2000/svg" 
@@ -47,12 +44,11 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                         <Link to="/" onClick={onClose}>
                             <img
                                 src={logo} 
-                                alt="Rijvolutie"
-                                width="126px"
-                                height="56px"
+                                alt="Rijvolutie samen op weg"
+                                width={126}
+                                height={56}
                                 draggable={false}
                                 className="logo-menu"
-                                aria-label="Rijvolutie samen op weg"
                             />
                         </Link>
                     </li>
@@ -65,6 +61,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
                                 className="icon-menu"
+                                aria-hidden="true"
                             >
                                 <path 
                                     strokeLinecap="round" 
@@ -77,14 +74,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/" end onClick={onClose}>
+                        <NavLink to="/" end  aria-label="Home" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                                >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -96,14 +95,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/prijslijst" onClick={onClose}>
+                        <NavLink to="/prijslijst" aria-label="Prijslijst" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -115,14 +116,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/overons" onClick={onClose}>
+                        <NavLink to="/overons" aria-label="Over ons" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -134,14 +137,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/milieu" onClick={onClose}>
+                        <NavLink to="/milieu" aria-label="Milieu" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -153,14 +158,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/walloffame" onClick={onClose}>
+                        <NavLink to="/walloffame" aria-label="Wall of Fame" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -172,14 +179,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/examenchecklist" onClick={onClose}>
+                        <NavLink to="/examenchecklist" aria-label="Examen Checklist" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 
@@ -191,14 +200,16 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                     </li>
 
                     <li>
-                        <NavLink to="/contact" onClick={onClose}>
+                        <NavLink to="/contact" aria-label="Contact" onClick={onClose}>
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 fill="none" 
                                 viewBox="0 0 24 24" 
                                 strokeWidth="1.5" 
                                 stroke="currentColor" 
-                                className="icon-menu">
+                                className="icon-menu"
+                                aria-hidden="true"
+                            >
                                     <path 
                                         strokeLinecap="round" 
                                         strokeLinejoin="round" 

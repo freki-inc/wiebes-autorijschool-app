@@ -11,7 +11,9 @@ export const OverOns = () => {
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5" 
                     stroke="currentColor" 
-                    className="icon mr-05">
+                    className="icon mr-05"
+                    aria-hidden="true"
+                >
                         <path 
                             strokeLinecap="round"
                             strokeLinejoin="round" 
@@ -21,7 +23,7 @@ export const OverOns = () => {
                 Over Ons
             </h2>
             <div className="over-ons-desktop-layout-top">
-                <img width={500} height={276} src={tesla} alt="tesla auto" draggable={false}></img>
+                <img width={500} height={276} src={tesla} alt="tesla auto" draggable={false} />
                 <div className="overons-text">
                     <p>
                         Wiebe's autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
@@ -35,7 +37,7 @@ export const OverOns = () => {
             <a href="https://www.cbr.nl/nl/service/nl/rijscholen/wiebes-autorijschool" target="_blank"><button className="center-text slagings-percentage">Bekijk mijn slagingspercentage</button></a>
 
             <div className="over-ons-desktop-layout-bottom">
-                <img width={500} height={282} src={opelMokka} alt="opel mokka auto" draggable={false}></img>
+                <img width={500} height={282} src={opelMokka} alt="opel mokka auto" draggable={false} />
                     <p className="overons-text">
                         Je kunt kiezen of je wilt rijden in een handgeschakelde Opel Mokka
                          die op HVO100 hernieuwbare diesel rijdt

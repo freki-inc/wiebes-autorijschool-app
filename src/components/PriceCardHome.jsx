@@ -17,7 +17,9 @@ export const PriceCardHome = ({
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5" 
                     stroke="currentColor" 
-                    className="icon mr-05">
+                    className="icon mr-05"
+                    aria-hidden="true"
+                >
                         <path 
                             strokeLinecap="round"
                             strokeLinejoin="round" 

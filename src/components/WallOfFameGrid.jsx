@@ -167,7 +167,9 @@ export const WallOfFameGrid = () => {
                     viewBox="0 0 24 24" 
                     strokeWidth="1.5" 
                     stroke="currentColor" 
-                    className="icon mr-05">
+                    className="icon mr-05"
+                    aria-hidden="true"
+                >
                         <path 
                             strokeLinecap="round" 
                             strokeLinejoin="round" 
@@ -187,12 +189,11 @@ export const WallOfFameGrid = () => {
                             alt={img.alt || ''}
                             loading="lazy"
                             decoding="async"
-                            width={"500px"}
-                            height={"281px"}
+                            width={500}
+                            height={281}
                             draggable={false}
                             onClick={() => setSelectedImage(img)}
                         />
-                        
                     </figure>
                 ))}
                 {/* Fullscreen Overlay */}
