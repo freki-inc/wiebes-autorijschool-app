@@ -1,4 +1,5 @@
 import milieu from "../assets/images/milieu.webp";
+import hvo100 from "../assets/images/hvo100.webp";
 
 export const Milieu = () => {
     return (
@@ -23,8 +24,9 @@ export const Milieu = () => {
                 <div className="milieu-text mt-1">
                     <p className="mb-1">Bij Rijvolutie zetten wij ons in voor een groene toekomst. Daarom hebben wij het roer helemaal omgegooid. Geen compromissen meer nodig. Onze handgeschakelde diesel rijdt op HVO100 hernieuwbare brandstof.</p>
                     <p className="mb-1">Hiermee hoop ik tot wel 90% co2 uitstoot te besparen. De automaat is een van de meest efficiënte ev's van het moment. Een 2026 Tesla model 3 long range. Deze laad ik op met groene stroom.</p>
-                    <p className="mb-1">Zo kunnen wij samen ons steentje bijdragen aan een betere toekomst zonder dat er een compromis gemaakt hoeft te worden in de keuze voor automaat of niet.</p>    
-                </div>          
+                    <p className="mb-2">Zo kunnen wij samen ons steentje bijdragen aan een betere toekomst zonder dat er een compromis gemaakt hoeft te worden in de keuze voor automaat of niet.</p>
+                </div>
+                <img className="hvo100-img mb-1" width={200} height={66} src={hvo100} alt="HVO100 logo" />
         </section>
     )
 }

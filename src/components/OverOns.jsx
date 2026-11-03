@@ -23,7 +23,7 @@ export const OverOns = () => {
             <div className="over-ons-desktop-layout-top">
                 <img width={500} height={276} src={tesla} alt="tesla auto" draggable={false}></img>
                 <div className="overons-text">
-                    <p className="mb-2">
+                    <p>
                         Wiebe's autorijschool, een begrip in Leiden, gooit het roer om en begint een Rijvolutie. 
                         Met meer dan tien jaar ervaring help ik jou op weg naar jouw rijbewijs. 
                         100% priveles. Geen andere leerlingen wegbrengen. Volle aandacht voor wat jij nodig hebt. 

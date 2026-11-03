@@ -724,7 +724,7 @@
 
   .slagings-percentage {
     padding: 0.4rem 1rem;
-    margin: 0 0 2rem;
+    margin: 3rem 0 3rem;
     background-color: var(--traffic-blue);
     color: var(--background-color);
     opacity: 0.85;
@@ -948,6 +948,10 @@
     border: 2px solid var(--section-headers);
     border-radius: 1rem;
     color: var(--h2-headings);
+  }
+
+  .hvo100-img {
+    border: 2px solid var(--primary-color);
   }
 
   .milieu-text {
@@ -1244,7 +1248,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--hero-light-text);
-    margin: 1rem 0 0 0;
+    margin: 1.3rem 0 0 0;
     border: none;
     background-color: transparent;
   }
@@ -1537,10 +1541,15 @@
     }
 
     .over-ons-desktop-layout-top {
+      height: fit-content;
       display: flex;
-      padding: 0 13rem;
       flex-direction: row;
-      margin-bottom: 2rem;
+      padding: 0 13rem;
+      /* margin-bottom: 2rem; */
+    }
+
+    .slagings-percentage {
+      margin: 3rem 0 3rem;
     }
 
     .over-ons-desktop-layout-bottom {
