@@ -187,8 +187,8 @@ export const WallOfFameGrid = () => {
                             alt={img.alt || ''}
                             loading="lazy"
                             decoding="async"
-                            width={500}
-                            height={281}
+                            width={"500px"}
+                            height={"281px"}
                             draggable={false}
                             onClick={() => setSelectedImage(img)}
                         />
