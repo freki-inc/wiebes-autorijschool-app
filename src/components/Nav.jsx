@@ -8,7 +8,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
         <header>
             <nav>
                 {/* Navigation logo */}
-                <Link to="/" draggable={false}>
+                <Link to="/" aria-label="Rijvolutie samen op weg" draggable={false}>
                     <img
                         src={logo} 
                         alt="Rijvolutie samen op weg"
@@ -41,7 +41,7 @@ const NavLogic = ({ isOpen, onOpen, onClose }) => {
                 <ul id="nav-links" className={`nav-links ${isOpen ? "open" : ""}`}>
 
                     <li>
-                        <Link to="/" onClick={onClose}>
+                        <Link to="/" aria-label="Rijvolutie samen op weg" onClick={onClose}>
                             <img
                                 src={logo} 
                                 alt="Rijvolutie samen op weg"
