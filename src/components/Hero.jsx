@@ -3,7 +3,7 @@ import heroImg from "../assets/images/hero-img.webp";
 
 export const Hero = () => {
     return (
-        <section className="hero-section mt-4" aria-labelledby="hero-title">
+        <section className="hero-section" aria-labelledby="hero-title">
             <div className="hero-img-wrapper">
                 <img 
                     src={heroImg}
