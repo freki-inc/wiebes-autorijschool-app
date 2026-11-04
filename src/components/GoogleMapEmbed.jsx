@@ -1,6 +1,6 @@
 export const GoogleMapEmbed = () => {
   const address = "ChIJ_d37HdrHxUcRSpIJxxTRy8E"; // location
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_KEY; // AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_KEY;
 
       return (
         <section className="location-map-section mt-5">
