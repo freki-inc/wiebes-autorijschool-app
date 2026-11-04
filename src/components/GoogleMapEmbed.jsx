@@ -1,5 +1,6 @@
 export const GoogleMapEmbed = () => {
   const address = "ChIJ_d37HdrHxUcRSpIJxxTRy8E"; // location
+  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_KEY; // AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg
 
       return (
         <section className="location-map-section mt-5">
@@ -35,7 +36,7 @@ export const GoogleMapEmbed = () => {
               loading="lazy"
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
-              src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBuZkh9A8S_J8caT6I51P8-iC9n372t_Lg&q=place_id:${address}`}
+              src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=place_id:${address}`}
             />
           </div>
         </section>
