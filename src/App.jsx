@@ -7,7 +7,6 @@ import { WallOfFamePage } from "./components/WallOfFamePage";
 import { OverOnsPage } from "./components/OverOnsPage";
 import { ContactPage } from "./components/ContactPage";
 import { PrivacyBeleid } from "./components/PrivacyBeleid";
-import { CookieBeleid } from "./components/CookieBeleid";
 import { AlgemeneVoorwaarden } from "./components/AlgemeneVoorwaarden";
 import { ExamenChecklistPage } from "./components/ExamenChecklistPage";
 import { MilieuPage } from "./components/MilieuPage";
@@ -20,8 +19,7 @@ function AppContent() {
 
   // Hide the popup on these two pages
   const hidePopup =
-    location.pathname === '/privacybeleid' ||
-    location.pathname === '/cookiebeleid'
+    location.pathname === '/privacybeleid'
 
   return (
     <>
@@ -35,7 +33,6 @@ function AppContent() {
         <Route path="/walloffame" element={<WallOfFamePage />} />
         <Route path="/examenchecklist" element={<ExamenChecklistPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/cookiebeleid" element={<CookieBeleid />} />
         <Route path="/privacybeleid" element={<PrivacyBeleid />} />
         <Route path="/algemenevoorwaarden" element={<AlgemeneVoorwaarden />} />
       </Routes>

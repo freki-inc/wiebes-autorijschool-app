@@ -24,7 +24,7 @@ export const AlgemeneVoorwaarden = () => {
                     <li className="mb-05">1.1 De leerling krijgt praktijkles van een rijinstructeur die aan de eisen voldoet van de Wet Rijonderricht Motorrijtuigen (WRM). De rijinstructeur moet in het bezit zijn van een geldig instructeurscertificaat.</li>
                     <li className="mb-05">1.2 De leerling legt het rij(her)examen of de tussentijdse toets in principe af met de auto waarin rijles is gevolgd. In geval van overmacht kan het echter gebeuren dat de leerling het rij(her)examen of de tussentijdse toets aflegt in een vervangende lesauto.</li>
                     <li className="mb-05">1.3 De rijschool heeft voor het geval er iets gebeurt waarvoor zij ten opzichte van jou aansprakelijk is een bedrijfsverzekering afgesloten.</li>
-                    <li className="mb-05">1.4 Indien een les door omstandigheden niet door kan gaan wordt de leerling hiervan zo spoedig mogelijk op de hoogte gesteld en wordt er een nieuwe afspraak gemaakt, of een vervangende rijinstructeur ingezet.</li>
+                    <li className="mb-2">1.4 Indien een les door omstandigheden niet door kan gaan wordt de leerling hiervan zo spoedig mogelijk op de hoogte gesteld en wordt er een nieuwe afspraak gemaakt, of een vervangende rijinstructeur ingezet.</li>
                 </ul>
                 <p className="mb-1"><strong>De kandidaat / leerling dient zich te houden aan de volgende afspraken:</strong></p>
                 <h2 className="mb-1">ARTIKEL 2</h2>
@@ -48,7 +48,7 @@ export const AlgemeneVoorwaarden = () => {
                     <li className="mb-05">a. Indien er een achterstand in de betaling ontstaat, krijgt de leerling in eerste instantie een betalingsherinnering per email. Wordt hier echter ook geen gehoor aan gegeven, ontvangt de leerling 7 dagen na de herinnering een herinneringsfactuur waarbij aanmaningskosten van €10 worden gerekend.</li>
                     <li className="mb-05">b. De rijschool mag rente gaan vragen over het verschuldigde bedrag nadat er 14 dagen zijn verstreken na ontvangst van de factuur. Deze rente bedraagt de wettelijke rente van 2%.</li>
                     <li className="mb-05">3.5 Mocht het toch voorkomen dat de leerling de herinneringsfactuur niet binnen 14 dagen na ontvangst betaalt, dan kan de rijschool een incassobureau inschakelen. Bijkomende kosten zijn dan voor de leerling.</li>
-                    <li className="mb-05">3.6 Als je een pakket hebt aangeschaft en je behaalt je rijbewijs terwijl je het pakket nog niet volledig benut hebt dan vindt er een creditering plaats van een gedeelte van dit pakket. De gereden uren van je laatst gekochte pakket worden verrekend volgens de op dit moment geldende losse lesuur prijs. Zie wiebes-rijschool.nl//prijslijst. Wat er overblijft wordt binnen 14 dagen gecrediteerd.</li>
+                    <li className="mb-05">3.6 Als je een pakket hebt aangeschaft en je behaalt je rijbewijs terwijl je het pakket nog niet volledig benut hebt dan vindt er een creditering plaats van een gedeelte van dit pakket. De gereden uren van je laatst gekochte pakket worden verrekend volgens de op dit moment geldende losse lesuur prijs. Zie <NavLink to="/contact" className="algemene-voorwaarden-link">https://www.rijvolutie.nl/prijslijst</NavLink>. Wat er overblijft wordt binnen 14 dagen gecrediteerd.</li>
                     <li className="mb-05">3.7 Pakketten zijn een jaar geldig vanaf de factuurdatum van de laatst betaalde factuur en komen na een jaar stilzwijgend te vervallen zonder recht op restitutie.</li>
                     <li className="mb-05">3.8 De rijschool behoudt zich het recht voor tussentijds tariefwijzigingen door te voeren. De nieuwe tarieven gelden dan per direct voor losse lessen en voor nog aan te schaffen pakketten.</li>
                 </ul>
@@ -56,7 +56,7 @@ export const AlgemeneVoorwaarden = () => {
                 <h2 className="mb-1">ARTIKEL 4</h2>
                 <ul>
                     <li className="mb-05">De leerling mag zonder opgaaf van reden de pakketovereenkomsten beëindigen. In dit geval rekent de rijschool eenmalig €25 administratiekosten en zal er een verrekening plaatsvinden voor de nog niet verreden lesuren en eventuele ongebruikte rij(her)examen en/of de tussentijdse toets.</li>
-                    <li className="mb-05">De gereden uren van je laatst gekochte pakket worden teruggerekend volgens de op dit moment geldende losse lesuur prijs. Zie wiebes-rijschool.nl//prijslijst.Wat er overblijft plus eventuele ongebruikte rij(her)examen en/of de tussentijdse toets wordt binnen 30 dagen gecrediteerd.</li>
+                    <li className="mb-05">De gereden uren van je laatst gekochte pakket worden teruggerekend volgens de op dit moment geldende losse lesuur prijs. Zie <NavLink to="/contact" className="algemene-voorwaarden-link">https://www.rijvolutie.nl/prijslijst</NavLink>.Wat er overblijft plus eventuele ongebruikte rij(her)examen en/of de tussentijdse toets wordt binnen 30 dagen gecrediteerd.</li>
                 </ul>
                 <p className="mb-1"><strong>Beëindigen van de les- en pakketovereenkomsten door de rijschool:</strong></p>
                 <h2 className="mb-1">ARTIKEL 5</h2>
